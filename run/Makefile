@@ -23,6 +23,7 @@ makestuff/Makefile:
 
 Makefile: tilde
 
+Ignore += tilde
 tilde: dir=~
 tilde:
 	$(linkdirname)
