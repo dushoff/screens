@@ -1,5 +1,5 @@
 
-## This is the XXX subdirectory of the YYY repo
+## This is the run subdirectory of the screens repo
 
 current: target
 -include target.mk
@@ -11,6 +11,7 @@ current: target
 Sources += Makefile
 
 ms = makestuff
+Ignore += $(ms)
 Makefile: makestuff/Makefile
 	touch $@
 makestuff/Makefile:
@@ -20,9 +21,18 @@ makestuff/Makefile:
 
 ######################################################################
 
+Makefile: tilde
+
+tilde: dir=~
+tilde:
+	$(linkdirname)
+
+######################################################################
+
 ### Makestuff
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
+
 
 
