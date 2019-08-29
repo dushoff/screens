@@ -17,6 +17,37 @@ makestuff/Makefile:
 
 ######################################################################
 
+## Build the main screen
+
+## Create a screen
+## TEMP Use a different name and different hotkey
+## Fail to attach, and then create
+## Not failing to attach means we're confused to call this rule – an error.
+mainscreen:
+	! screen -x gain && screen -c .gscreenrc -dm gain
+
+## Populate it and attach to it
+subscreens:
+	screen -S gain -p 0 -X exec make screen_session
+	screen -x gain
+
+## Start the subscreens and the desk
+screen_session: 
+	$(MAKE) run.subscreen
+	## $(MAKE) run.subscreen gitroot.subscreen Dropbox.subscreen
+	## $(MAKE) gitroot/3SS.subscreen
+	## $(MAKE) gitroot/708.subscreen
+	## $(MAKE) gitroot/Workshops.subscreen
+	screen -S run -p 0 -X stuff "deskstart"
+
+##  as a subscreen to ctrl-e-screeen
+%.subscreen: %.makescreen
+	screen -t $(notdir $*) screen -x $(notdir $*)
+
+
+
+######################################################################
+
 Sources += README.md
 
 alldirs += run
