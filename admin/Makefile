@@ -21,11 +21,13 @@ makestuff/Makefile:
 
 ######################################################################
 
-screen_session: Planning.vscreen linux_config.vscreen Lab_meeting.vscreen dweb.vscreen notebook.vscreen macweb.vscreen screen.vscreen
+screen_session: Planning.vscreen linux_config.vscreen 
 
 ######################################################################
 
 ## Repos
+
+## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ######################################################################
 
@@ -34,5 +36,4 @@ screen_session: Planning.vscreen linux_config.vscreen Lab_meeting.vscreen dweb.v
 -include makestuff/git.mk
 -include makestuff/visual.mk
 -include makestuff/repohome.mk
-
 
