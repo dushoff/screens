@@ -54,18 +54,18 @@ buildscreen: mainscreen subscreens
 ## Not failing to attach gives an error:
 ## We don't want to call this rule if the screen exists, since it will screen_session again
 mainscreen:
-	! screen -x gain && exec screen -c ~/.escreenrc -dm gain
+	! screen -x main && exec screen -c ~/.escreenrc -dm main
 
 ## Populate a screen and attach to it
 ## Call screen_session indirectly to control the environment 
 subscreens:
-	screen -S gain -p 0 -X exec make screen_session
-	screen -x gain
+	screen -S main -p 0 -X exec make screen_session
+	screen -x main
 
 ## Start the subscreens and the desk
 screen_session: 
-	$(MAKE) run.subscreen
-	## $(MAKE) run.subscreen gitroot.subscreen Dropbox.subscreen
+	$(MAKE) run.subscreen admin.subscreen
+	## $(MAKE) Dropbox.subscreen
 	## $(MAKE) gitroot/3SS.subscreen
 	## $(MAKE) gitroot/708.subscreen
 	## $(MAKE) gitroot/Workshops.subscreen
@@ -85,7 +85,6 @@ screen_session:
 	screen -S $(notdir $*) -p 0 -X select 0 || $(MAKE) $*.newscreen
 
 ######################################################################
-
 
 ### Makestuff rules
 
