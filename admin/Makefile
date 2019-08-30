@@ -1,5 +1,5 @@
 
-## This is the XXX subdirectory of the YYY repo
+## This is the admin subdirectory of the screens repo
 
 current: target
 -include target.mk
@@ -21,11 +21,18 @@ makestuff/Makefile:
 
 ######################################################################
 
+screen_session: Planning.vscreen linux_config.vscreen Lab_meeting.vscreen dweb.vscreen notebook.vscreen macweb.vscreen screen.vscreen
+
+######################################################################
+
+## Repos
+
 ######################################################################
 
 ### Makestuff
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
+-include makestuff/repohome.mk
 
 
