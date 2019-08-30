@@ -21,7 +21,10 @@ makestuff/Makefile:
 
 ######################################################################
 
-screen_session: tilde.vscreen
+screen_session:
+	$(MAKE) tilde.rscreen tilde/R.rscreen
+	screen tcsh
+	screen -t sudo sudo su
 
 ## Home directory is linked here for convenient screening
 ## Makefile: tilde  ## vscreen is supposed to take care of this 2019 Aug 29 (Thu)
