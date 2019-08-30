@@ -10,8 +10,7 @@ current: target
 
 Sources += Makefile
 
-ms = makestuff
-Ignore += $(ms)
+Ignore += makestuff
 Makefile: makestuff/Makefile
 	touch $@
 makestuff/Makefile:
@@ -21,9 +20,12 @@ makestuff/Makefile:
 
 ######################################################################
 
-screen_session: Planning.vscreen linux_config.vscreen 
+screen_session: Planning.vscreen linux_config.vscreen screens.vscreen
 
 ######################################################################
+
+screens: dir=~
+screens: ; $(linkdir)
 
 ## Repos
 
