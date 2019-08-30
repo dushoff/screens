@@ -27,6 +27,7 @@ buildscreen: mainscreen subscreens
 ## TEMP Use a different name and different hotkey
 ## Fail to attach, and then create
 ## Not failing to attach means we're confused to call this rule – an error.
+## mainscreen seems to work? 2019 Aug 29 (Thu)
 mainscreen:
 	cat ~/.gscreenrc
 	! screen -x gain && screen -c ~/.gscreenrc -dm gain
@@ -45,6 +46,10 @@ screen_session:
 	## $(MAKE) gitroot/708.subscreen
 	## $(MAKE) gitroot/Workshops.subscreen
 	## screen -S run -p 0 -X stuff "deskstart"
+
+%.newscreen:
+	cd $* && screen -dm $(notdir $*)
+	screen -S $(notdir $*) -p 0 -X exec make screen_session
 
 ## Attach to a subscreen (making sure it exists)
 %.subscreen: %.makescreen
