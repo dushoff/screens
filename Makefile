@@ -45,7 +45,7 @@ $(projdirs):
 	cd $@ && $(MAKE) makestuff
 
 alldirs += $(projdirs)
-Ignore += $(alldirs)
+Ignore += $(alldirs) $(servdirs)
 
 ######################################################################
 
