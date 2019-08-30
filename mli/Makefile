@@ -22,7 +22,7 @@ makestuff/Makefile:
 
 ######################################################################
 
-screen_session: mli_thesis.vscreen rabies_cihr.vscreen rabies_R0.vscreen rabies_correlations.vscreen
+screen_session: mli_thesis.vscreen rabies_R0.vscreen rabies_correlations.vscreen
 	# rdc.vscreen is resting
 
 vim_session:
@@ -37,6 +37,10 @@ vim_session:
 
 projdirs += mli_thesis
 mli_thesis: rhdir/git_wzmli_mli_thesis
+	$(rcopy)
+
+projdirs += rabies_cihr
+rabies_R0: rhdir/git_wzmli_rabies_R0
 	$(rcopy)
 
 projdirs += rabies_cihr
