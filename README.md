@@ -6,6 +6,26 @@ Manage jd workflow through /usr/bin/screen
 
 I hope this is not as dysfunctional as it seems. The gitroot/mat lossage is definitely adding up, though.
 
+## Todo
+
+What is happening in run?
+
+Breakpoint; is it safe to make twice? Can it be?
+
+Slow makestuff in direct directories
+
+Find a place for this screens directory under itself
+
+Environments; can we make from vim and keep everything clean?
+
+### non-core
+
+Think about (document?) alling logic?
+
+Split makestuff stuff up and make some of it simple again
+
+Make a simplegit that's really simple (-am simple)?
+
 ## Ideas
 
 TRY to FRY before you DRY or else you'll DIE

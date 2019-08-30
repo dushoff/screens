@@ -17,6 +17,33 @@ makestuff/Makefile:
 
 ######################################################################
 
+# buildscreen: 
+
+## Subscreens
+
+%.direct:
+
+Sources += README.md
+
+projdirs += run
+## run:
+
+projdirs += admin
+## admin:
+
+
+######################################################################
+
+$(projdirs):
+	$(mkdir)
+	cp makestuff/direct.mk $@/Makefile
+	cd $@ && $(MAKE) makestuff
+
+alldirs += $(projdirs)
+Ignore += $(alldirs)
+
+######################################################################
+
 ## Build the main screen
 
 ## We may want to fail if mainscreen exists so we don't get duplication
@@ -24,13 +51,11 @@ makestuff/Makefile:
 buildscreen: mainscreen subscreens
 
 ## Create a screen
-## TEMP Use a different name and different hotkey
 ## Fail to attach, and then create
-## Not failing to attach means we're confused to call this rule – an error.
-## mainscreen seems to work? 2019 Aug 29 (Thu)
+## Not failing to attach gives an error:
+## We don't want to call this rule if the screen exists, since it will screen_session again
 mainscreen:
-	cat ~/.gscreenrc
-	! screen -x gain && screen -c ~/.gscreenrc -dm gain
+	! screen -x gain && exec screen -c ~/.escreenrc -dm gain
 
 ## Populate a screen and attach to it
 ## Call screen_session indirectly to control the environment 
@@ -62,13 +87,6 @@ screen_session:
 
 ######################################################################
 
-Sources += README.md
-
-alldirs += run
-
-Ignore += $(alldirs)
-
-######################################################################
 
 ### Makestuff rules
 
