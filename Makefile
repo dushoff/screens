@@ -71,10 +71,6 @@ screen_session:
 	## $(MAKE) gitroot/Workshops.subscreen
 	## screen -S run -p 0 -X stuff "deskstart"
 
-%.newscreen:
-	cd $* && screen -dm $(notdir $*)
-	screen -S $(notdir $*) -p 0 -X exec make screen_session
-
 ## Attach to a subscreen (making sure it exists)
 %.subscreen: %.makescreen
 	screen -t $(notdir $*) screen -x $(notdir $*)
@@ -83,6 +79,10 @@ screen_session:
 %.makescreen:
 	cd $(dir $*) && $(MAKE) $(notdir $*)
 	screen -S $(notdir $*) -p 0 -X select 0 || $(MAKE) $*.newscreen
+
+%.newscreen:
+	cd $* && screen -dm $(notdir $*)
+	screen -S $(notdir $*) -p 0 -X exec make screen_session
 
 ######################################################################
 
