@@ -19,14 +19,20 @@ makestuff/Makefile:
 
 ## Build the main screen
 
+## We may want to fail if mainscreen exists so we don't get duplication
+## Also, what about attaching from inside?
+buildscreen: mainscreen subscreens
+
 ## Create a screen
 ## TEMP Use a different name and different hotkey
 ## Fail to attach, and then create
 ## Not failing to attach means we're confused to call this rule – an error.
 mainscreen:
-	! screen -x gain && screen -c .gscreenrc -dm gain
+	cat ~/.gscreenrc
+	! screen -x gain && screen -c ~/.gscreenrc -dm gain
 
-## Populate it and attach to it
+## Populate a screen and attach to it
+## Call screen_session indirectly to control the environment 
 subscreens:
 	screen -S gain -p 0 -X exec make screen_session
 	screen -x gain
@@ -38,7 +44,7 @@ screen_session:
 	## $(MAKE) gitroot/3SS.subscreen
 	## $(MAKE) gitroot/708.subscreen
 	## $(MAKE) gitroot/Workshops.subscreen
-	screen -S run -p 0 -X stuff "deskstart"
+	## screen -S run -p 0 -X stuff "deskstart"
 
 ## Attach to a subscreen (making sure it exists)
 %.subscreen: %.makescreen
