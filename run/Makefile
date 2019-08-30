@@ -21,7 +21,10 @@ makestuff/Makefile:
 
 ######################################################################
 
-Makefile: tilde
+screen_session: tilde.vscreen
+
+## Home directory is linked here for convenient screening
+## Makefile: tilde  ## vscreen is supposed to take care of this 2019 Aug 29 (Thu)
 
 Ignore += tilde
 tilde: dir=~
@@ -34,6 +37,3 @@ tilde:
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
-
-
-
