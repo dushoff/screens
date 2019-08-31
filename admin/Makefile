@@ -1,5 +1,6 @@
 
 ## This is the admin (direct) subdirectory of the screens repo
+## Makefile based on makestuff/direct.mk
 
 current: target
 -include target.mk
