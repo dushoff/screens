@@ -4,16 +4,48 @@ current: target
 
 ## Makestuff setup
 Sources += Makefile 
-msrepo = https://github.com/dushoff
-
-Ignore += makestuff
-Makefile: makestuff/Makefile
-makestuff/Makefile:
-	git clone $(msrepo)/makestuff
-	ls $@
 
 -include makestuff/os.mk
 -include makestuff/perl.def
+
+######################################################################
+
+## Keep sink under control
+## Control what shows up and what syncs at the same time
+
+## run is special; don't shoehorn it in
+## Let Dropbox float?
+
+Ignore += run
+
+## r prefix indicates things we are not currently alling or screening
+## These could use recalcitrant vim (don't auto-close)!
+## A dirdir is a direct subdirectory
+## It is alled and screened
+dirdirs += admin mli DataViz
+
+## A linkdir is made with a link
+## It is screened
+linkdirs += Dropbox legacy
+
+## Start the subscreens and the desk
+screen_session: 
+	$(MAKE) run.subscreen
+	$(MAKE) $(dirdirs:%=%.subscreen)
+	$(MAKE) $(linkdirs:%=%.subscreen)
+	screen -S run -p 0 -X stuff "deskstart"
+
+######################################################################
+
+## bash hooks
+
+knowndirs += $(dirdirs) $(linkdirs) $(rdirdirs) $(rlinkdirs)
+
+dirnames.mk: Makefile
+	echo $(knowndirs:%=%.subscreen) : > $@
+
+Ignore += dirnames.mk
+-include dirnames.mk
 
 ######################################################################
 
@@ -23,29 +55,29 @@ Sources += README.md
 
 ## Subscreens
 
-servdirs += run
-projdirs += admin
-
-servdirs += Dropbox
 Dropbox: dir = ~
 Dropbox:
 	$(linkdir)
 
-servdirs += legacy
 legacy: dir = ~/gitroot
 legacy: ; $(linkdirname)
 
-projdirs += mli
-
 ######################################################################
 
-$(projdirs):
+$(dirdirs):
 	$(mkdir)
 	cp makestuff/direct.mk $@/Makefile
 	cd $@ && $(MAKE) makestuff
 
-alldirs += $(projdirs)
-Ignore += $(alldirs) $(servdirs)
+## This could go into a small .mk with what else?
+## Maybe an execute variable to make the two main sets of screens
+## Actually this stays here, because screens is unique
+## But we will do related stuff for the dirdirs
+alldirs += $(dirdirs)
+Ignore += $(knowndirs)
+
+flip:
+	@echo $(alldirs)
 
 ######################################################################
 
@@ -68,12 +100,6 @@ subscreens:
 	screen -S main -p 0 -X exec make screen_session
 	screen -x main
 
-## Start the subscreens and the desk
-screen_session: 
-	$(MAKE) run.subscreen admin.subscreen
-	$(MAKE) Dropbox.subscreen legacy.subscreen
-	screen -S run -p 0 -X stuff "deskstart"
-
 ## Attach to a subscreen (making sure it exists)
 ## Here's where we might want to do the ssx magic?
 %.subscreen: %.makescreen
@@ -93,6 +119,14 @@ screen_session:
 	screen -S $(notdir $*) -p 0 -X exec make screen_session
 
 ######################################################################
+
+msrepo = https://github.com/dushoff
+
+Ignore += makestuff
+Makefile: makestuff/Makefile
+makestuff/Makefile:
+	git clone $(msrepo)/makestuff
+	ls $@
 
 ### Makestuff rules
 
