@@ -1,58 +1,63 @@
-
-## This is the mli (direct) subdirectory of the screens repo
+## This is the mli dirdir
 ## makestuff/direct.mk
 
 current: target
 -include target.mk
 
-##################################################################
-
-## Defs
-
-Sources += Makefile
-
-ms = makestuff
-Ignore += $(ms)
-Makefile: makestuff/Makefile
-	touch $@
-makestuff/Makefile:
-	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
-
--include makestuff/os.mk
-
 ######################################################################
 
-screen_session: mli_thesis.vscreen rabies_R0.vscreen rabies_correlations.vscreen
-	# rdc.vscreen is resting
+## Screens
+
+projdirs += mli_thesis R0 correlations
+rprojdirs += grant rdc 
+
+screen_session: 
+	$(plvscreens)
+
+## Vim
 
 vim_session:
 	bash -cl "vi Makefile target.mk"
 
 ######################################################################
 
-## repo locations
-## include makestuff/repohome.auto.mk
+## Directories
 
-## rhdir_drop:
+## Links
 
-projdirs += mli_thesis
-mli_thesis: rhdir/git_wzmli_mli_thesis
+R0: rhdir/git_wzmli_rabies_R0
 	$(rcopy)
 
-projdirs += rabies_cihr
-rabies_R0: rhdir/git_wzmli_rabies_R0
+rdc: rhdir/git_wzmli_rdc
 	$(rcopy)
 
-projdirs += rabies_cihr
-rabies_cihr: rhdir/git_wzmli_rabies_cihr
+grant: rhdir/git_wzmli_rabies_cihr
 	$(rcopy)
 
-alldirs += $(projdirs)
+correlations: rhdir/git_wzmli_rabies_correlations
+	$(rcopy)
+
+sample: dir=~
+sample: ; $(linkdir)
+
+## Repos
+
+## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ######################################################################
 
 ### Makestuff
 
+Sources += Makefile
+
+Ignore += makestuff
+Makefile: makestuff/Makefile
+	touch $@
+makestuff/Makefile:
+	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
+
+-include makestuff/os.mk
+-include makestuff/dirdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
 -include makestuff/repohome.mk
