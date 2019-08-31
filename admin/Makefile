@@ -1,5 +1,5 @@
 
-## This is the admin subdirectory of the screens repo
+## This is the admin (direct) subdirectory of the screens repo
 
 current: target
 -include target.mk
@@ -20,7 +20,13 @@ makestuff/Makefile:
 
 ######################################################################
 
-screen_session: Planning.vscreen linux_config.vscreen screens.vscreen
+## What are my screens?
+
+projdirs += Planning linux_config 
+linkdirs += screens
+
+screen_session: 
+	$(plvscreens)
 
 ######################################################################
 
@@ -38,4 +44,5 @@ screens: ; $(linkdir)
 -include makestuff/git.mk
 -include makestuff/visual.mk
 -include makestuff/repohome.mk
+-include makestuff/dirdir.mk
 
