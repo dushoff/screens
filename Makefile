@@ -14,7 +14,7 @@ Sources += Makefile
 ## Control what shows up and what syncs at the same time
 
 ## run is special; don't shoehorn it in
-## Let Dropbox float?
+## Let Dropbox float, though
 
 Ignore += run
 
