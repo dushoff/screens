@@ -23,7 +23,7 @@ vim_session:
 
 ## Directories
 
-## Links
+## projdirs
 
 R0: rhdir/git_wzmli_rabies_R0
 	$(rcopy)
@@ -37,10 +37,10 @@ grant: rhdir/git_wzmli_rabies_cihr
 correlations: rhdir/git_wzmli_rabies_correlations
 	$(rcopy)
 
+## linkdirs
+
 sample: dir=~
 sample: ; $(linkdir)
-
-## Repos
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
