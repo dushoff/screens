@@ -1,50 +1,58 @@
-
-## This is the XXX (direct) subdirectory of the YYY/screens repo
-## makestuff/direct.mk
+## This the DataViz dirdir
+## makestuff/direct.Makefile
 
 current: target
 -include target.mk
 
 ##################################################################
 
-## Defs
+## Screens
 
-Sources += Makefile
+projdirs += public
+deepdirs += QMEE
+## linkdirs += link
 
-ms = makestuff
-Ignore += $(ms)
-Makefile: makestuff/Makefile
-	touch $@
-makestuff/Makefile:
-	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
+screen_session: 
+	$(plvscreens)
 
--include makestuff/os.mk
-
-######################################################################
-
-screen_session: ..vscreen
+## Vim
 
 vim_session:
 	bash -cl "vi Makefile target.mk"
 
 ######################################################################
 
-## repo locations
-## makestuff/repohome.list
-## makestuff/repohome.auto.mk
+## Directories
 
-## rhdir_drop:
+## Repos
 
-# projdirs += sample
-sample: rhdir/sample_sample_sample
+public: rhdir/git_mac-theobio_DataViz
 	$(rcopy)
 
-alldirs += $(projdirs)
+QMEE: rhdir/git_mac-theobio_QMEE
+	$(rcopy)
+
+## Other links
+
+sample: dir=~
+sample: ; $(linkdir)
+
+## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ######################################################################
 
 ### Makestuff
 
+Sources += Makefile
+
+Ignore += makestuff
+Makefile: makestuff/Makefile
+	touch $@
+makestuff/Makefile:
+	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
+
+-include makestuff/os.mk
+-include makestuff/dirdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
 -include makestuff/repohome.mk
