@@ -9,7 +9,7 @@ current: target
 ## Screens
 
 projdirs += public
-deepdirs += QMEE
+linkdirs += QMEE 744
 ## linkdirs += link
 
 screen_session: 
@@ -30,6 +30,9 @@ public: rhdir/git_mac-theobio_DataViz
 	$(rcopy)
 
 QMEE: rhdir/git_mac-theobio_QMEE
+	$(rcopy)
+
+744: rhdir/git_bbolker_stat744
 	$(rcopy)
 
 ## Other links
