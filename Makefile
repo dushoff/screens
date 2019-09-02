@@ -22,10 +22,11 @@ Ignore += run
 ## These could use recalcitrant vim (don't auto-close)!
 ## A dirdir is a direct subdirectory
 ## It is alled and screened
-dirdirs += admin mli DataViz
+dirdirs += admin mli DataViz Sandbox
 
-## A linkdir is made with a link
-## It is screened
+## We can handle Sandbox's Sandbox-iness from inside?`
+
+## A linkdir is screened but not alled
 linkdirs += Dropbox legacy
 
 ## Start the subscreens and the desk
@@ -61,23 +62,6 @@ Dropbox:
 
 legacy: dir = ~/gitroot
 legacy: ; $(linkdirname)
-
-######################################################################
-
-$(dirdirs):
-	$(mkdir)
-	cp makestuff/direct.mk $@/Makefile
-	cd $@ && $(MAKE) makestuff
-
-## This could go into a small .mk with what else?
-## Maybe an execute variable to make the two main sets of screens
-## Actually this stays here, because screens is unique
-## But we will do related stuff for the dirdirs
-alldirs += $(dirdirs)
-Ignore += $(knowndirs)
-
-flip:
-	@echo $(alldirs)
 
 ######################################################################
 
@@ -130,6 +114,7 @@ makestuff/Makefile:
 
 ### Makestuff rules
 
+-include makestuff/topdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
 
