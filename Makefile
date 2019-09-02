@@ -22,7 +22,8 @@ Ignore += run
 ## These could use recalcitrant vim (don't auto-close)!
 ## A dirdir is a direct subdirectory
 ## It is alled and screened
-dirdirs += admin mli DataViz Sandbox
+dirdirs += admin DataViz Sandbox
+rdirdirs += mli 
 
 ## We can handle Sandbox's Sandbox-iness from inside?`
 
