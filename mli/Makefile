@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += mli_thesis R0 correlations
+projdirs += thesis R0 correlations
 rprojdirs += grant rdc 
 
 screen_session: 
@@ -24,6 +24,9 @@ vim_session:
 ## Directories
 
 ## projdirs
+
+thesis: rhdir/git_wzmli_mli_thesis
+	$(rcopy)
 
 R0: rhdir/git_wzmli_rabies_R0
 	$(rcopy)
