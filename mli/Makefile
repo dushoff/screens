@@ -26,19 +26,19 @@ vim_session:
 ## projdirs
 
 thesis: rhdir/git_wzmli_mli_thesis
-	$(rcopy)
+	$(rhsetup)
 
 R0: rhdir/git_wzmli_rabies_R0
-	$(rcopy)
+	$(rhsetup)
 
 rdc: rhdir/git_wzmli_rdc
-	$(rcopy)
+	$(rhsetup)
 
 grant: rhdir/git_wzmli_rabies_cihr
-	$(rcopy)
+	$(rhsetup)
 
 correlations: rhdir/git_wzmli_rabies_correlations
-	$(rcopy)
+	$(rhsetup)
 
 ## linkdirs
 
