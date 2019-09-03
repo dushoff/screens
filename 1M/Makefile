@@ -25,6 +25,7 @@ vim_session:
 
 ## repohome
 
+## rm -rf Lectures rhdir/git_Bio1M_Lectures
 Lectures: rhdir/git_Bio1M_Lectures
 	$(rhsetup)
 
