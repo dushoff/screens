@@ -13,7 +13,6 @@ current: target
 
 screen_session: 
 	$(plvscreens)
-	@echo Does this avoid blankness?
 
 screens_setup: url= https://github.com/dushoff/screens.git
 DataViz_setup: url= https://github.com/mac-theobio/DataViz.git
