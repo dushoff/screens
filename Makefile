@@ -19,11 +19,11 @@ Sources += Makefile
 Ignore += run
 
 ## r prefix indicates things we are not currently alling or screening
-## These could use recalcitrant vim (don't auto-close)!
+## These could perhaps use recalcitrant vim (don't auto-close!) for safety
 ## A dirdir is a direct subdirectory
 ## It is alled and screened
 dirdirs += admin DataViz Sandbox
-rdirdirs += mli 
+dirdirs += mli 
 
 ## We can handle Sandbox's Sandbox-iness from inside?`
 
