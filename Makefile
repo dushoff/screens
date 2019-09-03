@@ -23,6 +23,7 @@ Ignore += run
 ## A dirdir is a direct subdirectory
 ## It is alled and screened
 dirdirs += admin DataViz Sandbox
+dirdirs += 1M
 dirdirs += mli 
 
 ## We can handle Sandbox's Sandbox-iness from inside?`
