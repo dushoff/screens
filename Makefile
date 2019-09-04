@@ -8,6 +8,8 @@ current: target
 
 setup: sync admin/Planning.sync admin/linux_config.sync
 
+start: setup buildscreen
+
 ######################################################################
 
 ## Keep sink under control
