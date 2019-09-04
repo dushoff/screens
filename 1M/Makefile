@@ -1,4 +1,3 @@
-
 ## This is 1M, a dirdir under screens
 ## makestuff/direct.Makefile
 current: target
@@ -25,8 +24,10 @@ vim_session:
 
 ## repohome
 
-## rm -rf Lectures rhdir/git_Bio1M_Lectures
 Lectures: rhdir/git_Bio1M_Lectures
+	$(rhsetup)
+
+web: rhdir/git_Bio1M_Bio1M.github.io 
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
