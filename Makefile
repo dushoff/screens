@@ -6,7 +6,10 @@ current: target
 
 ######################################################################
 
-setup: sync adminkd admin/Planning.sync
+setup: sync admin/Planning.sync admin/linux_config.sync
+
+## cd admin/linux_config && $(MAKE) main.load
+
 
 ######################################################################
 
