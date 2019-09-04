@@ -7,7 +7,7 @@ current: target
 
 ## Screens
 
-projdirs += Lectures
+projdirs += Lectures web
 ## linkdirs += link
 
 screen_session: 
