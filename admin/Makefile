@@ -23,7 +23,7 @@ makestuff/Makefile:
 
 ## What are my screens?
 
-projdirs += Planning linux_config 
+projdirs += Planning linux_config screens/makestuff
 linkdirs += screens
 
 screen_session: 
