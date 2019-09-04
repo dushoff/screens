@@ -8,30 +8,33 @@ current: target
 
 setup: sync admin/Planning.sync admin/linux_config.sync
 
+## Don't start from inside vim
 start: setup buildscreen
 
 ######################################################################
 
-## Keep sink under control
-## Control what shows up and what syncs at the same time
+## change together: what shows up and what syncs
+## This is picky because there's only one topdir, and 
+## it's good workflow to know what's where
 
-## run is special; don't shoehorn it in
-## Let Dropbox float, though
-
+## 1
 Ignore += run
+subscreens += run
 
-## r prefix indicates things we are not currently alling or screening
-## These could perhaps use recalcitrant vim (don't auto-close!) for safety
-## A dirdir is a direct subdirectory
-## It is alled and screened
-dirdirs += admin DataViz Sandbox
-dirdirs += 1M
-dirdirs += mli 
+## 2
+dirdirs += admin
+subscreens += admin
 
-## We can handle Sandbox's Sandbox-iness from inside?`
+## 3
+Ignore += Dropbox
+subscreens += Dropbox
 
-## A linkdir is screened but not alled
-linkdirs += Dropbox legacy
+dirdirs += DataViz 1M mli 
+subscreens += DataViz 1M mli 
+
+Ignore += legacy
+
+rdirdirs += Sandbox
 
 ## Start the subscreens and the desk
 screen_session: 
@@ -56,7 +59,7 @@ Ignore += dirnames.mk
 
 Sources += README.md
 
-## Subscreens
+## Linked subscreens
 
 Dropbox: dir = ~
 Dropbox:
