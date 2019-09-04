@@ -2,11 +2,11 @@
 current: target
 -include target.mk
 
-## Makestuff setup
-Sources += Makefile 
-
--include makestuff/os.mk
 -include makestuff/perl.def
+
+######################################################################
+
+setup: sync adminkd admin/Planning.sync
 
 ######################################################################
 
@@ -51,8 +51,6 @@ Ignore += dirnames.mk
 -include dirnames.mk
 
 ######################################################################
-
-# buildscreen: 
 
 Sources += README.md
 
@@ -105,6 +103,10 @@ subscreens:
 	screen -S $(notdir $*) -p 0 -X exec make screen_session
 
 ######################################################################
+
+Sources += Makefile 
+
+-include makestuff/os.mk
 
 msrepo = https://github.com/dushoff
 
