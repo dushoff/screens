@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += insurance
+projdirs += insurance 1MP
 ## linkdirs += link
 
 screen_session: 
@@ -26,6 +26,9 @@ vim_session:
 ## repohome
 
 insurance: rhdir/git_SACEMA_epidemicInsurance
+	$(rhsetup)
+
+1MP: rhdir/git_bbolker_math1mp
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
