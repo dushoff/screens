@@ -33,14 +33,13 @@ dirdirs += DataViz 1M mli
 subscreens += DataViz 1M mli 
 
 Ignore += legacy
+subscreens += legacy
 
 rdirdirs += Sandbox
 
 ## Start the subscreens and the desk
 screen_session: 
-	$(MAKE) run.subscreen
-	$(MAKE) $(dirdirs:%=%.subscreen)
-	$(MAKE) $(linkdirs:%=%.subscreen)
+	@echo $(MAKE) $(subscreens:%=%.subscreen)
 	screen -S run -p 0 -X stuff "deskstart"
 
 ######################################################################
