@@ -40,7 +40,7 @@ rdirdirs += Sandbox
 
 ## Start the subscreens and the desk
 screen_session: 
-	@echo $(MAKE) $(subscreens:%=%.subscreen)
+	$(MAKE) $(subscreens:%=%.subscreen)
 	screen -S run -p 0 -X stuff "deskstart"
 
 ######################################################################
