@@ -33,6 +33,9 @@ subscreens += Dropbox
 dirdirs += DataViz 1M mli 
 subscreens += DataViz 1M mli 
 
+dirdirs += staging
+subscreens += staging
+
 Ignore += legacy
 subscreens += legacy
 
@@ -45,7 +48,10 @@ screen_session:
 
 ######################################################################
 
-## bash hooks
+vim_session:
+	bash -cl "vmt makestuff/topdir.mk"
+
+## bash hooks (needs work)
 
 knowndirs += $(dirdirs) $(linkdirs) $(rdirdirs) $(rlinkdirs)
 
