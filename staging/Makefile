@@ -37,6 +37,9 @@ Ignore += local_rhdir
 
 ## Screens
 
+## rprojdirs += insurance 1MP
+## linkdirs += link
+
 screen_session: 
 	$(plvscreens)
 
@@ -47,15 +50,7 @@ vim_session:
 
 ######################################################################
 
-## Directories
-
 ## repohome
-
-insurance: local_rhdir/git_SACEMA_epidemicInsurance
-	$(rhsetup)
-
-1MP: local_rhdir/git_bbolker_math1mp
-	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
