@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += insurance 1MP
+rprojdirs += insurance 1MP
 ## linkdirs += link
 
 screen_session: 
@@ -38,6 +38,16 @@ insurance: rhdir/git_SACEMA_epidemicInsurance
 
 sample: dir=~
 sample: ; $(linkdir)
+
+######################################################################
+
+## Use only local rhdir for staging
+## 2019 Sep 07 (Sat) Bailing on making a good rule to make this.
+## Instead make the directory once by staging an empty file
+
+## mkdir rhdir; touch rhdir/null ##
+## git add -f rhdir/null ##
+
 
 ######################################################################
 
