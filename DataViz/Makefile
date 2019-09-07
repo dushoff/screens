@@ -8,8 +8,8 @@ current: target
 
 ## Screens
 
-projdirs += public
-linkdirs += QMEE 744
+projdirs += public private
+linkdirs += QMEE 17 p17
 ## linkdirs += link
 
 screen_session: 
@@ -27,13 +27,19 @@ vim_session:
 ## Repos
 
 public: rhdir/git_mac-theobio_DataViz
-	$(rcopy)
+	$(rhsetup)
+
+private: rhdir/git_mac-theobio_DataViz_private
+	$(rhsetup)
 
 QMEE: rhdir/git_mac-theobio_QMEE
-	$(rcopy)
+	$(rhsetup)
 
-744: rhdir/git_bbolker_stat744
-	$(rcopy)
+17: rhdir/git_bbolker_stat744
+	$(rhsetup)
+
+p17: rhdir/git_bbolker_stat744_private
+	$(rhsetup)
 
 ## Other links
 
