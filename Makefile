@@ -6,11 +6,16 @@ current: target
 
 ######################################################################
 
+## Don't start from inside vim
+start: sync
+	$(MAKE) screenstart
+
+screenstart: setup buildscreen
+
+sync: makestuff.sync
+
 setup: sync admin/Planning.sync admin/linux_config.sync
 	cd admin/linux_config && $(MAKE) main.load
-
-## Don't start from inside vim
-start: setup buildscreen
 
 ######################################################################
 
