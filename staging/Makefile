@@ -6,6 +6,16 @@ current: target
 
 ##################################################################
 
+## Keep this directory clean. Stage, commit, delete
+## The main purpose is to have a local rhdir, I think.
+## It might be good to combine the screen_session with legacy to save
+## a higher-level screen
+
+phyloglmm: rhdir/git_wzmli_phyloglmm
+	$(rhsetup)
+
+######################################################################
+
 ## Screens
 
 rprojdirs += insurance 1MP
