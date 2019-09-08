@@ -23,8 +23,7 @@ makestuff/Makefile:
 
 ## What are my screens?
 
-projdirs += Planning linux_config 
-resting += screens ## It's confuzzling to have two versions of screens; let's go with one for a while?
+projdirs += Planning linux_config notebook
 
 screen_session: 
 	$(plvscreens)
