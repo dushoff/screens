@@ -11,7 +11,8 @@ current: target
 ## It might be good to combine the screen_session with legacy to save
 ## a higher-level screen
 
-stageTarget = git_wzmli_phyloglmm
+## makestuff/repohome.auto.mk: 
+stageTarget = notebook
 
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -32,6 +33,17 @@ Ignore += local_rhdir
 %.graduate: rhdir %.all
 	$(MV) $* $<
 	$(RMR) local_rhdir/$*
+
+######################################################################
+
+## Backlog
+
+pending += $(stageTarget)
+pending += 1MP
+
+Ignore += $(pending)
+
+######################################################################
 
 ######################################################################
 
