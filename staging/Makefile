@@ -11,17 +11,18 @@ current: target
 ## It might be good to combine the screen_session with legacy to save
 ## a higher-level screen
 
+## Use canonical names; stuff shouldn't stay here anyway
+
 ## makestuff/repohome.auto.mk: 
-stageTarget = notebook
+stageTarget = git_bbolker_stat744_private
 
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
+forcegraduate: $(stageTarget:%=%.forcegraduate)
 
-## Use canonical names in future; stuff shouldn't stay here anyway
-
-Ignore += local_rhdir
-%: local_rhdir/%
-	$(rhsetup)
+$(stageTarget):
+	$(MAKE) rhdir/$@
+	$(MV) rhdir/$@ $@
 
 ## 2019 Sep 07 (Sat)
 ## Graduation not tested and not necessarily implemented properly!
@@ -30,20 +31,20 @@ Ignore += local_rhdir
 ## Graduate by moving the directory to a permanent rhdir location
 
 ## Don't graduate unless you can all
+## And don't graduate into an existing thing
 %.graduate: rhdir %.all
-	$(MV) $* $<
-	$(RMR) local_rhdir/$*
+	(! ls $</$*) && $(MV) $* $<
+
+%.forcegraduate: rhdir %.all
+	$(RMR) $</$* && $(MV) $* $<
 
 ######################################################################
 
 ## Backlog
 
 pending += $(stageTarget)
-pending += 1MP
 
 Ignore += $(pending)
-
-######################################################################
 
 ######################################################################
 
