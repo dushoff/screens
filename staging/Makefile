@@ -14,7 +14,7 @@ current: target
 ## Use canonical names; stuff shouldn't stay here anyway
 
 ## makestuff/repohome.auto.mk: 
-stageTarget = git_bbolker_stat744_private
+stageTarget = git_mac-theobio_Lab_meeting
 
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
