@@ -38,11 +38,16 @@ subscreens += Dropbox
 dirdirs += DataViz 1M mli 
 subscreens += DataViz 1M mli 
 
+dirdirs += projects
+subscreens += projects
+
 dirdirs += staging
 subscreens += staging
 
+#######################
+
 Ignore += legacy
-subscreens += legacy
+rlinkdirs += legacy
 
 rdirdirs += Sandbox
 
