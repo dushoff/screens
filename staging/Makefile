@@ -14,8 +14,9 @@ current: target
 ## Use canonical names; stuff shouldn't stay here anyway
 
 ## makestuff/repohome.auto.mk: 
-stageTarget = git_mac-theobio_Lab_meeting
+stageTarget = diversity_metrics
 
+## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
 forcegraduate: $(stageTarget:%=%.forcegraduate)
@@ -25,8 +26,6 @@ $(stageTarget):
 	$(MV) rhdir/$@ $@
 
 ## 2019 Sep 07 (Sat)
-## Graduation not tested and not necessarily implemented properly!
-## We need to keep canonical names for graduation to work well
 
 ## Graduate by moving the directory to a permanent rhdir location
 
