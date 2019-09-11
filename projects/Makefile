@@ -36,7 +36,6 @@ example: rhdir/host_group_name
 sample: dir=~
 sample: ; $(linkdir)
 
-
 ######################################################################
 
 ### Makestuff
@@ -51,6 +50,6 @@ makestuff/Makefile:
 
 -include makestuff/os.mk
 -include makestuff/dirdir.mk
--include makestuff/git.mk
 -include makestuff/visual.mk
 -include makestuff/repohome.mk
+-include makestuff/git.mk
