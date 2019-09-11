@@ -35,14 +35,25 @@ subscreens += admin
 Ignore += Dropbox
 subscreens += Dropbox
 
-dirdirs += DataViz 1M mli 
-subscreens += DataViz 1M mli 
+dirdirs += 1M DataViz
+subscreens += 1M DataViz
+
+dirdirs += staging
+subscreens += staging
 
 dirdirs += projects
 subscreens += projects
 
-dirdirs += staging
-subscreens += staging
+## Active, but not always opened
+
+dirdirs += mli
+## subscreens += mli
+
+dirdirs += park
+## subscreens += park
+
+dirdirs += cygu
+## subscreens += cygu
 
 #######################
 
