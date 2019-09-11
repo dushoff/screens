@@ -14,8 +14,7 @@ current: target
 ## Use canonical names; stuff shouldn't stay here anyway
 
 ## makestuff/repohome.auto.mk: 
-stageTarget = diversity_metrics
-
+stageTarget = git_cygubicko_wash
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -25,15 +24,17 @@ $(stageTarget):
 	$(MAKE) rhdir/$@
 	$(MV) rhdir/$@ $@
 
-## 2019 Sep 07 (Sat)
-
 ## Graduate by moving the directory to a permanent rhdir location
 
 ## Don't graduate unless you can all
-## And don't graduate into an existing thing
+
+## Make sure that the rhdir doesn't exist (usu because you moved it here)
+## and then move the local dir back
 %.graduate: rhdir %.all
 	(! ls $</$*) && $(MV) $* $<
 
+## Destroy the rhdir and then move
+## This can be rolled into the above, since rhdir is not valuable
 %.forcegraduate: rhdir %.all
 	$(RMR) $</$* && $(MV) $* $<
 
@@ -71,18 +72,6 @@ vim_session:
 
 sample: dir=~
 sample: ; $(linkdir)
-
-######################################################################
-
-## None of this is needed anymore 2019 Sep 07 (Sat)
-## Unless I want to rethink any of it
-
-## Use only local rhdir for staging
-## 2019 Sep 07 (Sat) Bailing on making a good rule to make this.
-## Instead make the directory once by staging an empty file
-
-## mkdir local_rhdir; touch local_rhdir/null ##
-## git add -f local_rhdir/null ##
 
 ######################################################################
 
