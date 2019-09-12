@@ -1,5 +1,5 @@
 
-## This is XXX, a dirdir under screens
+## This is projects, a dirdir under screens
 ## makestuff/direct.Makefile
 current: target
 -include target.mk
@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += diversity_metrics
+projdirs += diversity_metrics insurance
 ## linkdirs += link
 
 screen_session: 
@@ -25,7 +25,7 @@ vim_session:
 
 ## repohome
 
-example: rhdir/host_group_name
+insurance: rhdir/git_SACEMA_epidemicInsurance
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
