@@ -23,7 +23,7 @@ makestuff/Makefile:
 
 ## What are my screens?
 
-projdirs += Planning linux_config notebook Lab_meeting
+projdirs += Planning linux_config notebook Lab_meeting theobio_site
 
 screen_session: 
 	$(plvscreens)
@@ -38,6 +38,9 @@ screens: ; $(linkdir)
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 Lab_meeting: rhdir/git_mac-theobio_Lab_meeting
+	$(rhsetup)
+
+theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
 	$(rhsetup)
 
 ######################################################################
