@@ -1,6 +1,6 @@
 
 ## This is the admin (direct) subdirectory of the screens repo
-## Makefile based on makestuff/direct.mk
+## Makefile based on makestuff/direct.Makefile
 
 current: target
 -include target.mk
@@ -23,7 +23,10 @@ makestuff/Makefile:
 
 ## What are my screens?
 
-projdirs += Planning linux_config notebook Lab_meeting theobio_site
+projdirs += Planning linux_config notebook Lab_meeting theobio_site coreFaculty
+
+## Alled but not screened? Where are the rules?
+## rprojdirs = coreFaculty
 
 screen_session: 
 	$(plvscreens)
@@ -41,6 +44,9 @@ Lab_meeting: rhdir/git_mac-theobio_Lab_meeting
 	$(rhsetup)
 
 theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
+	$(rhsetup)
+
+coreFaculty: rhdir/git_ICI3D_coreFaculty
 	$(rhsetup)
 
 ######################################################################
