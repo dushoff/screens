@@ -14,7 +14,7 @@ current: target
 ## Use canonical names; stuff shouldn't stay here anyway
 
 ## makestuff/repohome.auto.mk: 
-stageTarget = git_ICI3D_coreFaculty
+stageTarget = git_ICI3D_rubellaSA
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
