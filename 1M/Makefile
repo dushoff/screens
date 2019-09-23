@@ -10,6 +10,11 @@ current: target
 projdirs += Lectures web
 ## linkdirs += link
 
+## Test stuff on bitbucket and elsewhere
+## https://dushoff@bitbucket.org/dushoff/1m_2017.git
+## https://dushoff@bitbucket.org/dushoff/1m_private.git
+## https://github.com/Bio1M/Archive
+
 screen_session: 
 	$(plvscreens)
 
