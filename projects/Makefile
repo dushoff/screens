@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += diversity_metrics insurance
+projdirs += diversity_metrics insurance rubella
 ## linkdirs += link
 
 screen_session: 
@@ -26,6 +26,9 @@ vim_session:
 ## repohome
 
 insurance: rhdir/git_SACEMA_epidemicInsurance
+	$(rhsetup)
+
+rubella: rhdir/git_ICI3D_rubellaSA
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
