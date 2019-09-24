@@ -45,6 +45,7 @@ dirdirs += projects
 subscreens += projects
 
 ## Active, but not always opened
+## See legacy/screen.mk
 
 dirdirs += mli
 ## subscreens += mli
