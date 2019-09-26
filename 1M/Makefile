@@ -7,7 +7,7 @@ current: target
 
 ## Screens
 
-projdirs += Lectures web
+projdirs += Lectures web Tests Archive
 ## linkdirs += link
 
 ## Test stuff on bitbucket and elsewhere
@@ -33,6 +33,12 @@ Lectures: rhdir/git_Bio1M_Lectures
 	$(rhsetup)
 
 web: rhdir/git_Bio1M_Bio1M.github.io 
+	$(rhsetup)
+
+Archive: rhdir/git_Bio1M_Archive
+	$(rhsetup)
+
+Tests: rhdir/bit_dushoff_1m_private
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
