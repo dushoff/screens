@@ -8,8 +8,8 @@ current: target
 
 ## Screens
 
-projdirs += thesis R0 correlations phyloglmm
-rprojdirs += grant rdc 
+projdirs += tz_pipeline R0 correlations
+rprojdirs += grant rdc thesis phyloglmm
 
 screen_session: 
 	$(plvscreens)
@@ -29,6 +29,9 @@ thesis: rhdir/git_wzmli_mli_thesis
 	$(rhsetup)
 
 R0: rhdir/git_wzmli_rabies_R0
+	$(rhsetup)
+
+tz_pipeline: rhdir/git_wzmli_rabies_db_pipeline
 	$(rhsetup)
 
 rdc: rhdir/git_wzmli_rdc
