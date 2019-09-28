@@ -14,7 +14,7 @@ current: target
 ## Use canonical names; stuff shouldn't stay here anyway
 
 ## makestuff/repohome.auto.mk: 
-stageTarget = bit_dushoff_1m_private
+stageTarget = git_wzmli_rabies_db_pipeline
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
