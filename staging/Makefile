@@ -14,7 +14,7 @@ current: target
 ## Use canonical names; stuff shouldn't stay here anyway
 
 ## makestuff/repohome.auto.mk: 
-stageTarget = git_wzmli_rabies_db_pipeline
+stageTarget = git_parksw3_bayesantigen2
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -59,7 +59,7 @@ screen_session:
 ## Vim
 
 vim_session:
-	bash -cl "vi Makefile target.mk"
+	bash -cl "vmt"
 
 ######################################################################
 
