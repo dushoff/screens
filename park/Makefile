@@ -10,7 +10,7 @@ current: target
 
 ## park.screens: contact_trace.vscreen bayes_antigen.vscreen generation_links.vscreen speedstrength/doc.vscreen little_r.vscreen oldTalks.vscreen
 
-projdirs += trace speed
+projdirs += trace speed flumap
 ## linkdirs += link
 
 screen_session: 
@@ -31,6 +31,9 @@ trace: rhdir/git_parksw3_contact_trace/
 	$(rhsetup)
 
 speed: rhdir/git_parksw3_speedstrength
+	$(rhsetup)
+
+flumap: rhdir/git_parksw3_bayesantigen2
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
