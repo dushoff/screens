@@ -13,8 +13,9 @@ current: target
 
 ## Use canonical names; stuff shouldn't stay here anyway
 
-## makestuff/repohome.auto.mk: 
-stageTarget = git_parksw3_bayesantigen2
+## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
+
+stageTarget = git_CYGUBICKO_admins
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -62,11 +63,6 @@ vim_session:
 	bash -cl "vmt"
 
 ######################################################################
-
-## repohome
-
-## This is done automatically in makestuff; just here for hooks
-## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ## linkdirs
 
