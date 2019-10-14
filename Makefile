@@ -35,7 +35,7 @@ subscreens += admin
 Ignore += Dropbox
 subscreens += Dropbox
 
-dirdirs += 1M DataViz
+dirdirs += 1M DataViz 3SS
 subscreens += 1M DataViz
 
 dirdirs += staging

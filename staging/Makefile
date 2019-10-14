@@ -15,7 +15,8 @@ current: target
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-stageTarget = git_mac-theobio_Condom_awareness
+## git_Bio3SS_submodLectures.replace ##
+stageTarget = git_Bio3SS_submodLectures
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -31,12 +32,14 @@ $(stageTarget):
 
 ## Make sure that the rhdir doesn't exist (usu because you moved it here)
 ## and then move the local dir back
-%.graduate: rhdir %.all
+%.delicategraduate: rhdir %.all
 	(! ls $</$*) && $(MV) $* $<
 
 ## Destroy the rhdir and then move
-## This can be rolled into the above, since rhdir is not valuable
-%.forcegraduate: rhdir %.all
+%.graduate: rhdir %.all %.replace
+
+## Use directly for legacies that you don't want to all
+%.replace: rhdir
 	$(RMR) $</$* && $(MV) $* $<
 
 ######################################################################
