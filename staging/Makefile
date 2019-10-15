@@ -20,7 +20,7 @@ stageTarget = cron
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
-forcegraduate: $(stageTarget:%=%.forcegraduate)
+replace: $(stageTarget:%=%.forcegraduate)
 
 $(stageTarget):
 	$(MAKE) rhdir/$@
