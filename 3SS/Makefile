@@ -8,8 +8,8 @@ current: target
 
 ## Screens
 
-## projdirs += project
-## linkdirs += link
+projdirs += Lectures web
+linkdirs += subLectures
 
 screen_session: 
 	$(plvscreens)
@@ -23,9 +23,10 @@ vim_session:
 
 ## Directories
 
-## repohome
+Lectures: rhdir/git_Bio3SS_Lectures/
+	$(rhsetup)
 
-example: rhdir/host_group_name
+web: rhdir/git_Bio3SS_Bio3SS.github.io
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
@@ -33,8 +34,9 @@ example: rhdir/host_group_name
 
 ## linkdirs
 
-sample: dir=~
-sample: ; $(linkdir)
+subLectures: rhdir/git_Bio3SS_submodLectures
+	$(rhsetup)
+	chmod -R a-w $@
 
 ######################################################################
 

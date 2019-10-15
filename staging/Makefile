@@ -16,7 +16,7 @@ current: target
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ## git_Bio3SS_submodLectures.replace ##
-stageTarget = git_Bio3SS_submodLectures
+stageTarget = git_Bio3SS_Bio3SS.github.io
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -36,7 +36,7 @@ $(stageTarget):
 	(! ls $</$*) && $(MV) $* $<
 
 ## Destroy the rhdir and then move
-%.graduate: rhdir %.all %.replace
+%.graduate: rhdir %.all %.replace ;
 
 ## Use directly for legacies that you don't want to all
 %.replace: rhdir
