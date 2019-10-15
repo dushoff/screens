@@ -23,7 +23,7 @@ makestuff/Makefile:
 
 ## What are my screens?
 
-projdirs += Planning linux_config notebook Lab_meeting theobio_site coreFaculty
+projdirs += Planning linux_config notebook Lab_meeting theobio_site coreFaculty CV
 
 ## Alled but not screened? Where are the rules?
 ## rprojdirs = coreFaculty
@@ -47,6 +47,9 @@ theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
 	$(rhsetup)
 
 coreFaculty: rhdir/git_ICI3D_coreFaculty
+	$(rhsetup)
+
+CV: rhdir/bit_dushoff_New_CV/
 	$(rhsetup)
 
 ######################################################################
