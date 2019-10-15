@@ -16,7 +16,7 @@ current: target
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ## git_Bio3SS_submodLectures.replace ##
-stageTarget = git_Bio3SS_Bio3SS.github.io
+stageTarget = cron
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
@@ -25,6 +25,10 @@ forcegraduate: $(stageTarget:%=%.forcegraduate)
 $(stageTarget):
 	$(MAKE) rhdir/$@
 	$(MV) rhdir/$@ $@
+	$(MAKE) $@/Makefile
+
+$(stageTarget)/Makefile:
+	cp makestuff/project.Makefile $@
 
 ## Graduate by moving the directory to a permanent rhdir location
 
