@@ -15,7 +15,6 @@ current: target
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-## git_Bio3SS_submodLectures.replace ##
 stageTarget = cron
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
