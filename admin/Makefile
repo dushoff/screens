@@ -49,7 +49,7 @@ theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
 coreFaculty: rhdir/git_ICI3D_coreFaculty
 	$(rhsetup)
 
-cron: %: rhdir/%/
+cron: %: rhdir/%
 	$(rhsetup)
 
 CV: rhdir/bit_dushoff_New_CV/
