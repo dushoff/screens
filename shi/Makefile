@@ -1,9 +1,5 @@
 
-## Better logic for types of subdirectories:
-## screened or not × alled or not
-## LOCKING for things that aren't alled
-
-## This is XXX, a dirdir under screens
+## This is shi, a dirdir under screens
 ## makestuff/direct.Makefile
 current: target
 -include target.mk
@@ -12,7 +8,7 @@ current: target
 
 ## Screens
 
-## projdirs += project
+projdirs += aging 
 ## linkdirs += link
 
 screen_session: 
@@ -26,10 +22,13 @@ vim_session:
 ######################################################################
 
 ## Directories
-
 ## repohome
 
-example: rhdir/host_group_name
+recency: rhdir/git_wzmli_mc_recency
+	$(rhsetup)
+behaviour: rhdir/Circumcision_and_behaviour
+	$(rhsetup)
+aging: rhdir/git_fishforwish_aging
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
