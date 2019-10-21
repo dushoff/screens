@@ -50,7 +50,7 @@ coreFaculty: rhdir/git_ICI3D_coreFaculty
 	$(rhsetup)
 
 ## cp -rf cron rhdir/ ##
-cron: %: rhdir/%/
+cron: %: rhdir/%
 	$(rhsetup)
 
 CV: rhdir/bit_dushoff_New_CV/
