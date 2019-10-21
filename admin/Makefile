@@ -49,6 +49,7 @@ theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
 coreFaculty: rhdir/git_ICI3D_coreFaculty
 	$(rhsetup)
 
+## cp -rf cron rhdir/ ##
 cron: %: rhdir/%/
 	$(rhsetup)
 
