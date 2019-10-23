@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += wash funs admins
+projdirs += wash funs admins proview
 ## linkdirs += link
 
 screen_session: 
@@ -32,6 +32,9 @@ funs: rhdir/git_cygubicko_funs/
 	$(rhsetup)
 
 admins: rhdir/git_CYGUBICKO_admins/
+	$(rhsetup)
+
+proview: rhdir/git_CYGUBICKO_proview/
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks

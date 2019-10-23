@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += tz_pipeline R0 correlations grant
+projdirs += tz_pipeline R0 correlations grant glasgow
 rprojdirs += grant rdc thesis phyloglmm
 
 screen_session: 
@@ -44,6 +44,9 @@ grant: rhdir/git_wzmli_rabies_cihr
 	$(rhsetup)
 
 correlations: rhdir/git_wzmli_rabies_correlations
+	$(rhsetup)
+
+glasgow: rhdir/git_wzmli_glasgow
 	$(rhsetup)
 
 ## linkdirs
