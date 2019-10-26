@@ -61,6 +61,8 @@ dirdirs += park
 dirdirs += cygu
 ## subscreens += cygu
 
+dirdirs += Workshops
+
 #######################
 
 Ignore += legacy
