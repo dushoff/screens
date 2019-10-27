@@ -9,7 +9,7 @@ current: target
 ## Screens
 
 projdirs += tz_pipeline R0 correlations grant glasgow
-rprojdirs += grant rdc thesis phyloglmm
+deepdirs += rdc thesis phyloglmm
 
 screen_session: 
 	$(plvscreens)
