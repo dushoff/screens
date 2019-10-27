@@ -1,9 +1,5 @@
 
-## Better logic for types of subdirectories:
-## screened or not × alled or not
-## LOCKING for things that aren't alled
-
-## This is XXX, a dirdir under screens
+## This is Workshops, a dirdir under screens
 ## makestuff/direct.Makefile
 current: target
 -include target.mk
@@ -12,11 +8,13 @@ current: target
 
 ## Screens
 
-## projdirs += project
+projdirs += generations
 ## linkdirs += link
 
 screen_session: 
 	$(plvscreens)
+
+rprojdirs += Generation_distributions Endemic_curves
 
 ## Vim
 
@@ -29,7 +27,15 @@ vim_session:
 
 ## repohome
 
-example: rhdir/host_group_name
+generations: rhdir/Generation_talks/
+	$(rhsetup)
+
+Disease_data: rhdir/git_mac-theobio_Disease_data/
+	$(rhsetup)
+
+## Directories whose simple rhdir names we're keeping for now
+ddirs = Generation_distributions Endemic_curves
+$(ddirs): %: rhdir/%
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
