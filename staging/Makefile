@@ -12,10 +12,11 @@ current: target
 ## a higher-level screen
 
 ## Use canonical names; stuff shouldn't stay here anyway
+## Note: generation_links postponed 2019 Oct 27 (Sun)!; too many submodules
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-stageTarget = git_mac-theobio_Disease_data
+stageTarget = git_ICI3D_rabies2019
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)

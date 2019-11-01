@@ -14,8 +14,6 @@ projdirs += generations
 screen_session: 
 	$(plvscreens)
 
-rprojdirs += Generation_distributions Endemic_curves
-
 ## Vim
 
 vim_session:
@@ -23,20 +21,26 @@ vim_session:
 
 ######################################################################
 
-## Directories
-
-## repohome
+## Project directories
 
 generations: rhdir/Generation_talks/
 	$(rhsetup)
 
+## Service directories
+
 Disease_data: rhdir/git_mac-theobio_Disease_data/
 	$(rhsetup)
 
+WA_Ebola_Outbreak: rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
+	$(rhsetup)
+
 ## Directories whose simple rhdir names we're keeping for now
-ddirs = Generation_distributions Endemic_curves
+ddirs += Generation_distributions Endemic_curves link_calculations 
+ddirs += SIR_model_family SIR_simulations ss_pix
 $(ddirs): %: rhdir/%
 	$(rhsetup)
+
+rprojdirs += ddirs
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
