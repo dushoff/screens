@@ -40,7 +40,7 @@ ddirs += SIR_model_family SIR_simulations ss_pix
 $(ddirs): %: rhdir/%
 	$(rhsetup)
 
-rprojdirs += ddirs
+rprojdirs += $(ddirs)
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
