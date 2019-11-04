@@ -23,7 +23,7 @@ makestuff/Makefile:
 
 ## What are my screens?
 
-projdirs += Planning linux_config notebook Lab_meeting theobio_site coreFaculty cron CV
+projdirs += Planning linux_config notebook Lab_meeting theobio_site coreFaculty cron CV Correspondence
 
 ## Alled but not screened? Where are the rules?
 ## rprojdirs = coreFaculty
@@ -54,6 +54,9 @@ cron: %: rhdir/%
 	$(rhsetup)
 
 CV: rhdir/bit_dushoff_New_CV/
+	$(rhsetup)
+
+Correspondence: rhdir/bit_dushoff_Correspondence
 	$(rhsetup)
 
 ######################################################################
