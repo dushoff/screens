@@ -63,6 +63,8 @@ dirdirs += cygu
 
 dirdirs += Workshops
 
+dirdirs += earn
+
 #######################
 
 Ignore += legacy

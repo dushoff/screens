@@ -16,7 +16,7 @@ current: target
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-stageTarget = bit_dushoff_Correspondence
+stageTarget = git_davidearn_onmort
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
