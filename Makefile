@@ -14,8 +14,8 @@ screenstart: setup buildscreen
 
 sync: makestuff.sync
 
-setup: sync admin/Planning.sync admin/linux_config.sync
-	cd admin/linux_config && $(MAKE) main.load
+setup: sync planning/Planning.sync planning/linux_config.sync
+	cd planning/linux_config && $(MAKE) main.load
 
 all.time: amsync
 
@@ -30,8 +30,8 @@ Ignore += run
 subscreens += run
 
 ## 2
-dirdirs += admin
-subscreens += admin
+dirdirs += planning
+subscreens += planning
 
 ## 3
 Ignore += Dropbox
@@ -40,14 +40,17 @@ subscreens += Dropbox
 dirdirs += 1M DataViz 3SS
 subscreens += 1M DataViz
 
-dirdirs += staging
-subscreens += staging
-
-dirdirs += projects
-subscreens += projects
-
 ## Active, but not always opened
 ## See legacy/screen.mk
+
+dirdirs += admin
+## subscreens += admin
+
+dirdirs += staging
+## subscreens += staging
+
+dirdirs += projects
+## subscreens += projects
 
 dirdirs += shi
 ## subscreens += shi
