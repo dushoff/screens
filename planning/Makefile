@@ -1,10 +1,4 @@
-
-## Better logic for types of subdirectories:
-## screened or not × alled or not
-## LOCKING for things that aren't alled
-
-## This is XXX, a dirdir under screens
-## makestuff/direct.Makefile
+## This is planning, a dirdir under screens
 current: target
 -include target.mk
 
@@ -12,8 +6,8 @@ current: target
 
 ## Screens
 
-## projdirs += project
-## linkdirs += link
+projdirs += Planning linux_config
+## notebook theobio_site 
 
 screen_session: 
 	$(plvscreens)
@@ -29,7 +23,7 @@ vim_session:
 
 ## repohome
 
-example: rhdir/host_group_name
+theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks
