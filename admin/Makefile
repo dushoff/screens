@@ -24,7 +24,7 @@ makestuff/Makefile:
 ## What are my screens?
 
 ## projdirs += Planning linux_config notebook Lab_meeting theobio_site coreFaculty cron CV Correspondence
-projdirs += Lab_meeting coreFaculty cron CV Correspondence tp
+projdirs += Lab_meeting coreFaculty notebook Correspondence tp cron CV
 
 ## Alled but not screened? Where are the rules?
 ## rprojdirs = coreFaculty
