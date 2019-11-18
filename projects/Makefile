@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += diversity_metrics insurance rubella
+projdirs += diversity_metrics insurance rubella polarization
 ## linkdirs += link
 
 screen_session: 
