@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += generations
+projdirs += generations math_talks
 ## linkdirs += link
 
 screen_session: 
@@ -24,6 +24,9 @@ vim_session:
 ## Project directories
 
 generations: rhdir/Generation_talks/
+	$(rhsetup)
+
+math_talks: rhdir/math_talks/
 	$(rhsetup)
 
 ## Service directories

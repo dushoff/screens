@@ -16,7 +16,7 @@ current: target
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-stageTarget = polarization
+stageTarget = math_talks
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
