@@ -37,11 +37,14 @@ subscreens += planning
 Ignore += Dropbox
 subscreens += Dropbox
 
+## Teaching
 dirdirs += 1M DataViz 3SS
 subscreens += 1M DataViz
 
 ## Active, but not always opened
 ## See legacy/screen.mk
+
+dirdirs += ici3d
 
 dirdirs += admin
 ## subscreens += admin
