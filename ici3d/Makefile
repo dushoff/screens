@@ -8,8 +8,10 @@ current: target
 
 ## Screens
 
-projdirs += MMED mmedweb DAIDD daiddweb io
-## linkdirs += link
+projdirs += MMED DAIDD io
+webdirs += mmedweb daiddweb
+linkdirs += $(webdirs)
+alldirs += $(webdirs)
 
 screen_session: 
 	$(plvscreens)
@@ -32,6 +34,8 @@ mmedweb: MMED MMED/pages
 	$(linkdirname)
 
 DAIDD: rhdir/git_ICI3D_DAIDD/
+daiddweb: DAIDD DAIDD/pages
+	$(linkdirname)
 
 io: rhdir/git_ICI3D_ICI3D.github.io/
 
