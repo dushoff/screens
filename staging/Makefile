@@ -17,7 +17,7 @@ current: target
 Sources += 3SS.scr
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-stageTarget = git_Bio3SS_Exponential_figures
+stageTarget = git_Bio3SS_Population_time_series
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
