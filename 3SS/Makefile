@@ -28,10 +28,8 @@ $(projdirs) $(rprojdirs):
 	$(rhsetup)
 
 Lectures: rhdir/git_Bio3SS_Lectures/
-	$(rhsetup)
 
 web: rhdir/git_Bio3SS_Bio3SS.github.io
-	$(rhsetup)
 
 exponential: rhdir/git_Bio3SS_Exponential_figures/
 ts: rhdir/git_Bio3SS_Population_time_series/
