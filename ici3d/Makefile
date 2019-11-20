@@ -30,11 +30,13 @@ vim_session:
 MMED: rhdir/git_ICI3D_MMED/
 
 mmedweb: dir=MMED/pages
-mmedweb: MMED MMED/pages
+mmedweb:
+	$(MAKE) MMED MMED/pages
 	$(linkdirname)
 
 DAIDD: rhdir/git_ICI3D_DAIDD/
-daiddweb: DAIDD DAIDD/pages
+daiddweb:
+	$(MAKE) DAIDD DAIDD/pages
 	$(linkdirname)
 
 io: rhdir/git_ICI3D_ICI3D.github.io/
