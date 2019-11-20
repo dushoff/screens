@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += Lectures web
+projdirs += Lectures web exponential
 linkdirs += subLectures
 
 screen_session: 
@@ -23,11 +23,16 @@ vim_session:
 
 ## Directories
 
+$(projdirs):
+	$(rhsetup)
+
 Lectures: rhdir/git_Bio3SS_Lectures/
 	$(rhsetup)
 
 web: rhdir/git_Bio3SS_Bio3SS.github.io
 	$(rhsetup)
+
+exponential: rhdir/git_Bio3SS_Exponential_figures/
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
