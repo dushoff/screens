@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += MMED web
+projdirs += MMED mmedweb DAIDD daiddweb io
 ## linkdirs += link
 
 screen_session: 
@@ -26,11 +26,14 @@ vim_session:
 ## repohome
 
 MMED: rhdir/git_ICI3D_MMED/
-	$(rhsetup)
 
-web: dir=MMED/pages
-web: MMED MMED/pages
+mmedweb: dir=MMED/pages
+mmedweb: MMED MMED/pages
 	$(linkdirname)
+
+DAIDD: rhdir/git_ICI3D_DAIDD/
+
+io: rhdir/git_ICI3D_ICI3D.github.io/
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl

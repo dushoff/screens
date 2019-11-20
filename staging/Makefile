@@ -15,9 +15,10 @@ current: target
 ## Note: generation_links postponed 2019 Oct 27 (Sun)!; too many submodules
 
 Sources += 3SS.scr
-## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-stageTarget = git_Bio3SS_Population_time_series
+## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
+stageTarget = git_ICI3D_DAIDD
+
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
