@@ -42,20 +42,15 @@ screens: ; $(linkdir)
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 Lab_meeting: rhdir/git_mac-theobio_Lab_meeting
-	$(rhsetup)
 
 coreFaculty: rhdir/git_ICI3D_coreFaculty
-	$(rhsetup)
 
 ## cp -rf cron rhdir/ ##
 cron: %: rhdir/%
-	$(rhsetup)
 
 CV: rhdir/bit_dushoff_New_CV/
-	$(rhsetup)
 
 Correspondence: rhdir/bit_dushoff_Correspondence
-	$(rhsetup)
 
 ######################################################################
 

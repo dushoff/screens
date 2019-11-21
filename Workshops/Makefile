@@ -1,6 +1,4 @@
-
 ## This is Workshops, a dirdir under screens
-## makestuff/direct.Makefile
 current: target
 -include target.mk
 
@@ -24,24 +22,19 @@ vim_session:
 ## Project directories
 
 generations: rhdir/Generation_talks/
-	$(rhsetup)
 
 math_talks: rhdir/math_talks/
-	$(rhsetup)
 
 ## Service directories
 
 Disease_data: rhdir/git_mac-theobio_Disease_data/
-	$(rhsetup)
 
 WA_Ebola_Outbreak: rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
-	$(rhsetup)
 
 ## Directories whose simple rhdir names we're keeping for now
 ddirs += Generation_distributions Endemic_curves link_calculations 
 ddirs += SIR_model_family SIR_simulations ss_pix
 $(ddirs): %: rhdir/%
-	$(rhsetup)
 
 rprojdirs += $(ddirs)
 

@@ -32,11 +32,14 @@ MMED: rhdir/git_ICI3D_MMED/
 mmedweb: dir=MMED/pages
 mmedweb:
 	$(MAKE) MMED MMED/pages
+	cd MMED && $(MAKE) pages
 	$(linkdirname)
 
 DAIDD: rhdir/git_ICI3D_DAIDD/
+daiddweb: dir=MMED/pages
 daiddweb:
-	$(MAKE) DAIDD DAIDD/pages
+	$(MAKE) DAIDD
+	cd DAIDD && $(MAKE) pages
 	$(linkdirname)
 
 io: rhdir/git_ICI3D_ICI3D.github.io/
