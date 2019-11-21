@@ -15,7 +15,7 @@ screenstart: setup buildscreen
 sync: makestuff.sync
 
 setup: sync planning/Planning.sync planning/linux_config.sync
-	cd planning/linux_config && $(MAKE) main.load
+	cd planning/linux_config && $(MAKE) main.load && $(MAKE) relink
 
 all.time: amsync
 
