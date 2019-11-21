@@ -26,28 +26,20 @@ vim_session:
 ## projdirs
 
 thesis: rhdir/git_wzmli_mli_thesis
-	$(rhsetup)
 
 R0: rhdir/git_wzmli_rabies_R0
-	$(rhsetup)
 
 tz_pipeline: rhdir/git_wzmli_rabies_db_pipeline
-	$(rhsetup)
 
 rdc: rhdir/git_wzmli_rdc
-	$(rhsetup)
 
 phyloglmm: rhdir/git_wzmli_phyloglmm
-	$(rhsetup)
 
 grant: rhdir/git_wzmli_rabies_cihr
-	$(rhsetup)
 
 correlations: rhdir/git_wzmli_rabies_correlations
-	$(rhsetup)
 
 glasgow: rhdir/git_wzmli_glasgow
-	$(rhsetup)
 
 ## linkdirs
 
