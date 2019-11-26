@@ -28,8 +28,10 @@ math_talks: rhdir/math_talks/
 ## Service directories
 
 Disease_data: rhdir/git_mac-theobio_Disease_data/
+	$(rhsetup)
 
 WA_Ebola_Outbreak: rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
+	$(rhsetup)
 
 ## Directories whose simple rhdir names we're keeping for now
 ddirs += Generation_distributions Endemic_curves link_calculations 
