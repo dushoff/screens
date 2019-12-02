@@ -17,7 +17,7 @@ current: target
 Sources += 3SS.scr
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
-stageTarget = git_ICI3D_ICI3D.github.io
+stageTarget = git_davidearn_plague
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)

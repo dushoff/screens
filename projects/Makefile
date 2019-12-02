@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += diversity_metrics insurance rubella polarization
+projdirs += diversity_metrics insurance rubella polarization plague
 ## linkdirs += link
 
 screen_session: 
@@ -26,10 +26,10 @@ vim_session:
 ## repohome
 
 insurance: rhdir/git_SACEMA_epidemicInsurance
-	$(rhsetup)
 
 rubella: rhdir/git_ICI3D_rubellaSA
-	$(rhsetup)
+
+plague: rhdir/git_davidearn_plague
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
