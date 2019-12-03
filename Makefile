@@ -41,13 +41,12 @@ subscreens += Dropbox
 dirdirs += 1M DataViz 3SS
 subscreens += 1M DataViz
 
+dirdirs += admin
+subscreens += admin
+
 ## Active, but not always opened
-## See legacy/screen.mk
 
 dirdirs += ici3d
-
-dirdirs += admin
-## subscreens += admin
 
 dirdirs += staging
 ## subscreens += staging
