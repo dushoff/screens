@@ -6,8 +6,8 @@ current: target
 
 ## Screens
 
-projdirs += Planning linux_config
-## notebook theobio_site 
+projdirs += Planning linux_config theobio_site 
+## notebook
 
 screen_session: 
 	$(plvscreens)
@@ -25,9 +25,6 @@ vim_session:
 
 theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
 	$(rhsetup)
-
-## This is done automatically in makestuff; just here for hooks
-## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ## linkdirs
 
