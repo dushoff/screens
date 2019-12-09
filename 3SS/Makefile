@@ -24,9 +24,6 @@ vim_session:
 
 ## Directories
 
-$(projdirs) $(rprojdirs):
-	$(rhsetup)
-
 Lectures: rhdir/git_Bio3SS_Lectures/
 
 web: rhdir/git_Bio3SS_Bio3SS.github.io
