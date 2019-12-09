@@ -36,7 +36,7 @@ mmedweb:
 	$(linkdirname)
 
 DAIDD: rhdir/git_ICI3D_DAIDD/
-daiddweb: dir=MMED/pages
+daiddweb: dir=DAIDD/pages
 daiddweb:
 	$(MAKE) DAIDD
 	cd DAIDD && $(MAKE) pages
