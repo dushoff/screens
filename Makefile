@@ -38,7 +38,8 @@ Ignore += Dropbox
 subscreens += Dropbox
 
 ## Teaching
-dirdirs += 1M DataViz 3SS
+dirdirs += 1M DataViz 2SS
+containers += 3SS
 subscreens += 1M DataViz
 
 dirdirs += admin
@@ -72,6 +73,16 @@ dirdirs += earn
 
 #######################
 
+## Container directories are like dirdirs, but they are repos
+## This allows humans to build stuff without starting from Dushoff screen configuration
+
+## Awkward; rethink some of the repohome stuff (qv)
+3SS: admin/rhdir/git_Bio3SS_top
+	$(dircopy)
+	cd $@ && $(MAKE) Makefile && $(MAKE) makestuff/Makefile && $(MAKE) makestuff.msync && $(MAKE) all.time
+
+#######################
+
 Ignore += legacy
 rlinkdirs += legacy
 
@@ -89,7 +100,7 @@ vim_session:
 
 ## bash hooks (needs work)
 
-knowndirs += $(dirdirs) $(linkdirs) $(rdirdirs) $(rlinkdirs)
+knowndirs += $(dirdirs) $(containers) $(linkdirs) $(rdirdirs) $(rlinkdirs) 
 
 dirnames.mk: Makefile
 	echo $(knowndirs:%=%.subscreen) : > $@
