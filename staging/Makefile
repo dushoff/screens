@@ -17,7 +17,9 @@ current: target
 Sources += 3SS.scr
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
-stageTarget = diversity_metrics
+## rhdir/git_Bio3SS_top: ; $(rhmake)
+stageTarget = git_Bio3SS_top
+
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
 graduate: $(stageTarget:%=%.graduate)
