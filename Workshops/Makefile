@@ -52,7 +52,7 @@ sample: ; $(linkdir)
 
 ### Makestuff
 
-Sources += Makefile
+Sources += Makefile notes.md
 
 Ignore += makestuff
 Makefile: makestuff/Makefile
