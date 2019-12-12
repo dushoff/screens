@@ -32,7 +32,7 @@ projdirs += generations
 generations: rhdir/Generation_talks
 
 projdirs += math
-math: rhdir/math_talks
+math: dir=rhdir/math_talks
 
 ## Service directories
 
