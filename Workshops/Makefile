@@ -20,13 +20,6 @@ vim_session:
 
 ## Project directories
 
-<<<<<<< HEAD
-projdirs += disease
-disease: rhdir/disease_dynamics
-
-projdirs += stats
-stats: rhdir/statistics_talks
-=======
 generations: dir=rhdir/Generation_talks
 
 math: dir=rhdir/math_talks
@@ -34,7 +27,6 @@ math: dir=rhdir/math_talks
 disease: dir=rhdir/disease_dynamics
 
 stats: dir=rhdir/statistics_talks
->>>>>>> 3b51b8ab19e1b71f40138a76ef201cbb5a095d51
 
 projdirs += generations
 generations: rhdir/Generation_talks
