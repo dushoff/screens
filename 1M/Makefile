@@ -29,13 +29,13 @@ vim_session:
 
 ## repohome
 
-Lectures: rhdir/git_Bio1M_Lectures
+Lectures: dir=rhdir/git_Bio1M_Lectures
 
-web: rhdir/git_Bio1M_Bio1M.github.io 
+web: dir=rhdir/git_Bio1M_Bio1M.github.io 
 
-Tests: rhdir/bit_dushoff_1m_private
+Tests: dir=rhdir/bit_dushoff_1m_private
 
-Archive: rhdir/git_Bio1M_Archive
+Archive: dir=rhdir/git_Bio1M_Archive
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl

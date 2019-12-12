@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += aging 
+projdirs += recency behaviour aging 
 ## linkdirs += link
 
 screen_session: 
@@ -24,12 +24,9 @@ vim_session:
 ## Directories
 ## repohome
 
-recency: rhdir/git_wzmli_mc_recency
-	$(rhsetup)
-behaviour: rhdir/Circumcision_and_behaviour
-	$(rhsetup)
-aging: rhdir/git_fishforwish_aging
-	$(rhsetup)
+recency: dir=rhdir/git_wzmli_mc_recency
+behaviour: dir=rhdir/Circumcision_and_behaviour
+aging: dir=rhdir/git_fishforwish_aging
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl

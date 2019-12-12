@@ -27,14 +27,11 @@ vim_session:
 
 ## repohome
 
-trace: rhdir/git_parksw3_contact_trace/
-	$(rhsetup)
+trace: dir=rhdir/git_parksw3_contact_trace/
 
-speed: rhdir/git_parksw3_speedstrength
-	$(rhsetup)
+speed: dir=rhdir/git_parksw3_speedstrength
 
-flumap: rhdir/git_parksw3_bayesantigen2
-	$(rhsetup)
+flumap: dir=rhdir/git_parksw3_bayesantigen2
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl

@@ -27,7 +27,7 @@ vim_session:
 
 ## repohome
 
-MMED: rhdir/git_ICI3D_MMED/
+MMED: dir=rhdir/git_ICI3D_MMED/
 
 mmedweb: dir=MMED/pages
 mmedweb:
@@ -35,14 +35,14 @@ mmedweb:
 	cd MMED && $(MAKE) pages
 	$(linkdirname)
 
-DAIDD: rhdir/git_ICI3D_DAIDD/
+DAIDD: dir=rhdir/git_ICI3D_DAIDD/
 daiddweb: dir=DAIDD/pages
 daiddweb:
 	$(MAKE) DAIDD
 	cd DAIDD && $(MAKE) pages
 	$(linkdirname)
 
-io: rhdir/git_ICI3D_ICI3D.github.io/
+io: dir=rhdir/git_ICI3D_ICI3D.github.io/
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl

@@ -26,19 +26,17 @@ vim_session:
 
 ## Repos
 
-public: rhdir/git_mac-theobio_DataViz
-	$(rhsetup)
+public: dir=rhdir/git_mac-theobio_DataViz
 
-private: rhdir/git_mac-theobio_DataViz_private
-	$(rhsetup)
+private: dir=rhdir/git_mac-theobio_DataViz_private
 
-QMEE: rhdir/git_mac-theobio_QMEE
-	$(rhsetup)
+QMEE: dir=rhdir/git_mac-theobio_QMEE
 
-17: rhdir/git_bbolker_stat744
-	$(rhsetup)
+17: dir=rhdir/git_bbolker_stat744
 
-p17: rhdir/git_bbolker_stat744_private
+p17: dir=rhdir/git_bbolker_stat744_private
+
+$(linkdirs):
 	$(rhsetup)
 
 ## Other links
