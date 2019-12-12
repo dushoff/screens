@@ -82,12 +82,9 @@ dirdirs += earn
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
-3SS: rhdir/git_Bio3SS_top
-	$(dircopy)
-	cd $@ && $(MAKE) Makefile && $(MAKE) makestuff/Makefile && $(MAKE) makestuff.msync && $(MAKE) all.time
+3SS: dir=rhdir/git_Bio3SS_top
 
-rabies: rhdir/git_eliminaterabies_top
-	$(rhsetup)
+rabies: dir=rhdir/git_eliminaterabies_top
 
 #######################
 
