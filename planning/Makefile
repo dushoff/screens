@@ -23,7 +23,8 @@ vim_session:
 
 ## repohome
 
-theobio_site: rhdir/git_mac-theobio_mac-theobio.github.io/
+theobio_site: dir=rhdir/git_mac-theobio_mac-theobio.github.io/
+theobio_site: 
 	$(rhsetup)
 
 ## linkdirs
