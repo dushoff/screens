@@ -39,7 +39,7 @@ subscreens += planning
 Ignore += Dropbox
 subscreens += Dropbox
 
-## Getting rid of 2SS 2019 Dec 12 (Thu)
+## Getting rid of 3SS 2019 Dec 12 (Thu)
 ## Teaching
 dirdirs += 1M DataViz
 containers += 3SS
