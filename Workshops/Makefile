@@ -43,16 +43,15 @@ LatexTemplates: dir=rhdir/git_ICI3D_LatexTemplates
 ## Directories whose simple rhdir names we're keeping for now
 ddirs += Generation_distributions Endemic_curves link_calculations 
 ddirs += SIR_model_family SIR_simulations ss_pix
-$(ddirs): %: dir=rhdir/%
+$(ddirs):
+	$(MAKE) rhdir/$@
+	$(CPR) rhdir/$@ .
 
 ## 3SS dirs (worth a rule?)
 bdirs += Exponential_figures Birth_death_models
-$(bdirs): %: dir=rhdir/git_Bio3SS_%
-
-## rhdir
-
-rprojdirs += $(ddirs) $(bdirs)
-rprojdirs: $(rprojdirs)
+$(bdirs):
+	$(MAKE) rhdir/git_Bio3SS_$@
+	$(CPR) rhdir/git_Bio3SS_$@ $@
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
