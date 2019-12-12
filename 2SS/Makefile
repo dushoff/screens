@@ -37,6 +37,7 @@ ts: dir=rhdir/git_Bio3SS_Population_time_series/
 ## linkdirs
 
 subLectures: dir=rhdir/git_Bio3SS_submodLectures
+subLectures: 
 	$(rhsetup)
 	chmod -R a-w $@
 
