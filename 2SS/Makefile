@@ -1,4 +1,5 @@
 
+## The dirdir is _deprecated_ (and now called 2SS). Look at the container directory instead
 ## This is 3SS, a dirdir under screens
 ## makestuff/direct.Makefile
 current: target

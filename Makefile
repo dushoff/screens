@@ -62,6 +62,7 @@ dirdirs += shi
 ## subscreens += shi
 
 dirdirs += mli
+containers += rabies
 ## subscreens += mli
 
 dirdirs += park
@@ -79,10 +80,14 @@ dirdirs += earn
 ## Container directories are like dirdirs, but they are repos
 ## This allows humans to build stuff without starting from Dushoff screen configuration
 
-## Awkward; rethink some of the repohome stuff (qv)
-3SS: admin/rhdir/git_Bio3SS_top
+## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
+
+3SS: rhdir/git_Bio3SS_top
 	$(dircopy)
 	cd $@ && $(MAKE) Makefile && $(MAKE) makestuff/Makefile && $(MAKE) makestuff.msync && $(MAKE) all.time
+
+rabies: rhdir/git_eliminaterabies_top
+	$(rhsetup)
 
 #######################
 
@@ -90,6 +95,8 @@ Ignore += legacy
 rlinkdirs += legacy
 
 rdirdirs += Sandbox
+
+######################################################################
 
 ## Start the subscreens and the desk
 screen_session: 
@@ -181,6 +188,7 @@ makestuff/Makefile:
 
 ## compare makestuff/dirdir.mk
 -include makestuff/topdir.mk
+-include makestuff/repohome.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
 

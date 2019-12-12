@@ -6,7 +6,6 @@ current: target
 
 ## Screens
 
-projdirs += generations math disease stats
 ## linkdirs += link
 
 screen_session: 
@@ -15,19 +14,23 @@ screen_session:
 ## Vim
 
 vim_session:
-	bash -cl "vmt"
+	bash -cl "vmt notes.md"
 
 ######################################################################
 
 ## Project directories
 
-generations: rhdir/Generation_talks
-
-math: rhdir/math_talks
-
+projdirs += disease
 disease: rhdir/disease_dynamics
 
+projdirs += stats
 stats: rhdir/statistics_talks
+
+projdirs += generations
+generations: rhdir/Generation_talks
+
+projdirs += math
+math: rhdir/math_talks
 
 ## Service directories
 
