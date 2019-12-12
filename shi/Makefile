@@ -24,11 +24,11 @@ vim_session:
 ## Directories
 ## repohome
 
-recency: rhdir/git_wzmli_mc_recency
+recency: dir=rhdir/git_wzmli_mc_recency
 	$(rhsetup)
-behaviour: rhdir/Circumcision_and_behaviour
+behaviour: dir=rhdir/Circumcision_and_behaviour
 	$(rhsetup)
-aging: rhdir/git_fishforwish_aging
+aging: dir=rhdir/git_fishforwish_aging
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks

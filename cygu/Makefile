@@ -25,16 +25,16 @@ vim_session:
 
 ## repohome
 
-wash: rhdir/git_cygubicko_wash/
+wash: dir=rhdir/git_cygubicko_wash/
 	$(rhsetup)
 
-funs: rhdir/git_cygubicko_funs/
+funs: dir=rhdir/git_cygubicko_funs/
 	$(rhsetup)
 
-admins: rhdir/git_CYGUBICKO_admins/
+admins: dir=rhdir/git_CYGUBICKO_admins/
 	$(rhsetup)
 
-proview: rhdir/git_CYGUBICKO_proview/
+proview: dir=rhdir/git_CYGUBICKO_proview/
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks

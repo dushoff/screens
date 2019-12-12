@@ -25,10 +25,10 @@ vim_session:
 
 ## repohome
 
-onmort: rhdir/git_davidearn_onmort/
+onmort: dir=rhdir/git_davidearn_onmort/
 	$(rhsetup)
 
-LBoM: rhdir/git_davidearn_LBoM/
+LBoM: dir=rhdir/git_davidearn_LBoM/
 	$(rhsetup)
 
 ## This is done automatically in makestuff; just here for hooks

@@ -25,21 +25,21 @@ vim_session:
 
 ## projdirs
 
-thesis: rhdir/git_wzmli_mli_thesis
+thesis: dir=rhdir/git_wzmli_mli_thesis
 
-R0: rhdir/git_wzmli_rabies_R0
+R0: dir=rhdir/git_wzmli_rabies_R0
 
-tz_pipeline: rhdir/git_wzmli_rabies_db_pipeline
+tz_pipeline: dir=rhdir/git_wzmli_rabies_db_pipeline
 
-rdc: rhdir/git_wzmli_rdc
+rdc: dir=rhdir/git_wzmli_rdc
 
-phyloglmm: rhdir/git_wzmli_phyloglmm
+phyloglmm: dir=rhdir/git_wzmli_phyloglmm
 
-grant: rhdir/git_wzmli_rabies_cihr
+grant: dir=rhdir/git_wzmli_rabies_cihr
 
-correlations: rhdir/git_wzmli_rabies_correlations
+correlations: dir=rhdir/git_wzmli_rabies_correlations
 
-glasgow: rhdir/git_wzmli_glasgow
+glasgow: dir=rhdir/git_wzmli_glasgow
 
 ## linkdirs
 

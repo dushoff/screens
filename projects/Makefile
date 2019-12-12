@@ -25,13 +25,13 @@ vim_session:
 
 ## repohome
 
-insurance: rhdir/git_SACEMA_epidemicInsurance
+insurance: dir=rhdir/git_SACEMA_epidemicInsurance
 
-rubella: rhdir/git_ICI3D_rubellaSA
+rubella: dir=rhdir/git_ICI3D_rubellaSA
 
-plague: rhdir/git_davidearn_plague
+plague: dir=rhdir/git_davidearn_plague
 
-checkPlots: rhdir/checkPlots
+checkPlots: dir=rhdir/checkPlots
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
