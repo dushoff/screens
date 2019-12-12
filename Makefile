@@ -58,7 +58,7 @@ dirdirs += staging
 dirdirs += projects
 ## subscreens += projects
 
-dirdirs += shi
+## dirdirs += shi
 ## subscreens += shi
 
 dirdirs += mli
