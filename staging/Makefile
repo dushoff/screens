@@ -17,8 +17,8 @@ current: target
 Sources += 3SS.scr
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
-## rhdir/git_Bio3SS_top: ; $(rhmake)
-stageTarget = git_Bio3SS_top
+## rhdir/disease_dynamics: ; $(rhmake)
+stageTarget = disease_dynamics
 
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)

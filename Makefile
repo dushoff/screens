@@ -17,9 +17,11 @@ sync: makestuff.sync
 setup: sync planning/Planning.sync planning/linux_config.sync
 	cd planning/linux_config && $(MAKE) main.load && $(MAKE) relink
 
-all.time: amsync
-
 ######################################################################
+
+## Use testing as a Sandbox-style environment. Watch out for Dropbox finding
+
+Ignore += testing
 
 ## change together: what shows up and what syncs
 ## This is picky because there's only one topdir, and 
@@ -37,10 +39,11 @@ subscreens += planning
 Ignore += Dropbox
 subscreens += Dropbox
 
+## Get rid of 2SS soon 2019 Dec 12 (Thu)
 ## Teaching
 dirdirs += 1M DataViz 2SS
 containers += 3SS
-subscreens += 1M DataViz
+subscreens += 1M DataViz 3SS
 
 dirdirs += admin
 subscreens += admin
