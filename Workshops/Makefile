@@ -20,19 +20,15 @@ vim_session:
 
 ## Project directories
 
+projdirs += generations
 generations: dir=rhdir/Generation_talks
 
+projdirs += math
 math: dir=rhdir/math_talks
 
 disease: dir=rhdir/disease_dynamics
 
 stats: dir=rhdir/statistics_talks
-
-projdirs += generations
-generations: rhdir/Generation_talks
-
-projdirs += math
-math: dir=rhdir/math_talks
 
 ## Service directories
 
