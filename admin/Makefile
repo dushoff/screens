@@ -47,7 +47,7 @@ Lab_meeting: dir=rhdir/git_mac-theobio_Lab_meeting
 coreFaculty: dir=rhdir/git_ICI3D_coreFaculty
 
 ## cp -rf cron rhdir/ ##
-cron: %: rhdir/%
+cron: dir=rhdir/%
 
 CV: dir=rhdir/bit_dushoff_New_CV/
 
