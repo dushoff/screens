@@ -41,6 +41,7 @@ Disease_data: dir=rhdir/git_mac-theobio_Disease_data/
 
 rprojdirs += WA_Ebola_Outbreak
 WA_Ebola_Outbreak: dir=rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
+## del -fr rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak ##
 
 rprojdirs += LatexTemplates
 LatexTemplates: dir=rhdir/git_ICI3D_LatexTemplates
