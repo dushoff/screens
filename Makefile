@@ -61,7 +61,7 @@ dirdirs += projects
 ## dirdirs += shi
 ## subscreens += shi
 
-dirdirs += mli
+## dirdirs += mli
 containers += rabies
 ## subscreens += mli
 
