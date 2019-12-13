@@ -20,15 +20,17 @@ vim_session:
 
 ## Project directories
 
+projdirs += disease
+disease: dir=rhdir/disease_dynamics
+
+projdirs += stats
+stats: dir=rhdir/statistics_talks
+
 projdirs += generations
 generations: dir=rhdir/Generation_talks
 
 projdirs += math
 math: dir=rhdir/math_talks
-
-disease: dir=rhdir/disease_dynamics
-
-stats: dir=rhdir/statistics_talks
 
 ## Service directories
 
