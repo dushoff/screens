@@ -61,6 +61,7 @@ dirdirs += projects
 ## dirdirs += shi
 ## subscreens += shi
 
+## It's a mystery why rabies isn't Ignored
 ## dirdirs += mli
 containers += rabies
 ## subscreens += mli
