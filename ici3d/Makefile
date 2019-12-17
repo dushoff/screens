@@ -8,13 +8,19 @@ current: target
 
 ## Screens
 
-projdirs += MMED DAIDD io
-webdirs += mmedweb daiddweb
+## projdirs += MMED DAIDD io
+## webdirs += mmedweb daiddweb
+
+## DAIDD
+projdirs += DAIDD
+webdirs += daiddweb
+
 linkdirs += $(webdirs)
 alldirs += $(webdirs)
 
 screen_session: 
 	$(plvscreens)
+	$(MAKE) DAIDD/public.vscreen
 
 ## Vim
 
