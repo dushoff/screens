@@ -20,7 +20,6 @@ alldirs += $(webdirs)
 
 screen_session: 
 	$(plvscreens)
-	$(MAKE) DAIDD/public.vscreen
 
 ## Vim
 
