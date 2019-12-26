@@ -25,8 +25,6 @@ vim_session:
 
 theobio_site: dir=rhdir/git_mac-theobio_mac-theobio.github.io/
 
-## linkdirs
-
 sample: dir=~
 sample: ; $(linkdir)
 
