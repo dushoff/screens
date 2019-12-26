@@ -35,7 +35,7 @@ math: dir=rhdir/math_talks
 ## Service directories
 
 rprojdirs += Disease_data
-Disease_data: dir=rhdir/git_mac-theobio_Disease_data/
+Disease_data: dir=rhdir/git_mac-theobio_Disease_data
 
 rprojdirs += WA_Ebola_Outbreak
 WA_Ebola_Outbreak: dir=rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
