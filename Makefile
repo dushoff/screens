@@ -57,13 +57,13 @@ dirdirs += staging
 dirdirs += projects
 ## subscreens += projects
 
-## dirdirs += shi
+dirdirs += shi
 ## subscreens += shi
 
 ## It's a mystery why rabies isn't Ignored
 ## dirdirs += mli
-containers += rabies
 ## subscreens += mli
+containers += rabies
 
 dirdirs += park
 ## subscreens += park
