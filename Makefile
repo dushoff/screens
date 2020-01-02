@@ -39,11 +39,10 @@ subscreens += planning
 Ignore += Dropbox
 subscreens += Dropbox
 
-## Getting rid of 3SS 2019 Dec 12 (Thu)
 ## Teaching
 dirdirs += 1M DataViz
 containers += 3SS
-subscreens += 1M DataViz 3SS
+subscreens += 3SS
 
 dirdirs += admin
 subscreens += admin
@@ -93,6 +92,7 @@ Ignore += legacy
 rlinkdirs += legacy
 
 rdirdirs += Sandbox
+rdirdirs += 1M DataViz 
 
 ######################################################################
 
