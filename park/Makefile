@@ -41,7 +41,6 @@ flumap: dir=rhdir/git_parksw3_bayesantigen2
 sample: dir=~
 sample: ; $(linkdir)
 
-
 ######################################################################
 
 ### Makestuff
