@@ -57,6 +57,7 @@ dirdirs += staging
 dirdirs += projects
 ## subscreens += projects
 
+Ignore += shi
 ## Rebuild this, I think
 ## dirdirs += shi
 ## subscreens += shi
