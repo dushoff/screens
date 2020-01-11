@@ -153,21 +153,21 @@ subscreens:
 	screen -x main
 
 ## Attach to a subscreen (making sure it exists)
-## Here's where we might want to do the ssx magic?
 %.subscreen: %.makescreen
 	screen -t $(notdir $*) screen -x $(notdir $*)
 
 ## The logic here of what happens when we make from where is confusing
-## Goal 2019 Aug 30 (Fri): go to main screen 0 and do something like ssx from there
 ## Make the directory (or subdirectory, deprecated?) exist, then:
 ## Find a screen with this name or make a new one
 %.makescreen:
 	cd $(dir $*) && $(MAKE) $(notdir $*)
 	screen -S $(notdir $*) -p 0 -X select 0 || $(MAKE) $*.newscreen
 
+## Sleep line under test 2020 Jan 11 (Sat)
 ## bash -cl here (before screen -dm) led to a very weird disaster
 %.newscreen:
 	cd $* && screen -dm $(notdir $*)
+	screen -list $(notdir $*) || sleep 1
 	screen -S $(notdir $*) -p 0 -X exec make screen_session
 
 ######################################################################
