@@ -13,9 +13,11 @@ current: target
 projdirs += trace speed flumap
 ## linkdirs += link
 
-screen_session: 
-	$(plvscreens)
+screen_session:
+	$(MAKE) trace.vscreen
+	$(MAKE) speed.vscreen speed/doc.vscreen
 
+##	$(plvscreens)
 ## Vim
 
 vim_session:
