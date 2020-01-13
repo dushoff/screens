@@ -101,6 +101,7 @@ rdirdirs += 1M DataViz
 ## Start the subscreens and the desk
 screen_session: 
 	$(MAKE) $(subscreens:%=%.subscreen)
+	screen -list run || sleep 1
 	screen -S run -p 0 -X stuff "deskstart"
 
 ######################################################################
