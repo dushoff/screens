@@ -18,7 +18,7 @@ Sources += 3SS.scr
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 ## rhdir/disease_dynamics: ; $(rhmake)
-stageTarget = git_ElishaBayode_Babies_mummies_growth_rates_MS
+stageTarget = git_bbolker_louseplague
 
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
