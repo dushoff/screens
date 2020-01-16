@@ -6,7 +6,7 @@ current: target
 
 ## Screens
 
-projdirs += Planning linux_config theobio_site
+projdirs += Planning linux_config theobio_site notebook
 ## notebook move back here!
 
 screen_session: 
