@@ -18,7 +18,7 @@ Sources += 3SS.scr
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 ## rhdir/disease_dynamics: ; $(rhmake)
-stageTarget = git_Bio3SS_Evaluation_materials
+stageTarget = git_Outbreak-analysis_WA_Ebola_Outbreak
 
 ## Keep canonical names for smooth graduation pathway
 vscreen: $(stageTarget:%=%.vscreen)
