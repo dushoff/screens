@@ -54,6 +54,9 @@ dirdirs += ici3d
 dirdirs += staging
 ## subscreens += staging
 
+dirdirs += outbreak
+## subscreens += outbreak
+
 dirdirs += projects
 ## subscreens += projects
 
