@@ -18,6 +18,7 @@ Sources += 3SS.scr
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 ## rhdir/disease_dynamics: ; $(rhmake)
+## make rhdir/git_Outbreak-analysis_top
 stageTarget = git_wzmli_corona
 
 ## Keep canonical names for smooth graduation pathway

@@ -54,8 +54,11 @@ dirdirs += ici3d
 dirdirs += staging
 ## subscreens += staging
 
-dirdirs += outbreak
-## subscreens += outbreak
+## dirdirs += dd_outbreak
+## subscreens += dd_outbreak
+
+containers += outbreak
+outbreak: dir= rhdir/git_Outbreak-analysis_top
 
 dirdirs += projects
 ## subscreens += projects
