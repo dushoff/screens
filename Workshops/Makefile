@@ -57,6 +57,10 @@ $(bdirs):
 	$(MAKE) rhdir/git_Bio3SS_$@
 	$(CPR) rhdir/git_Bio3SS_$@ $@
 
+## New style cloning
+trace:
+	git clone https://github.com/parksw3/contact_trace.git $@
+
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
