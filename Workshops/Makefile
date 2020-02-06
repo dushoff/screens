@@ -72,9 +72,16 @@ sample: dir=~
 sample: ; $(linkdir)
 
 rabies_R0: dir=../rabies/R0
-
 rabies_correlations: dir=../rabies/correlations
 rabies_correlations rabies_R0:
+	$(linkdirname)
+
+coronaSpread: dir=../outbreak/corona
+coronaSpread:
+	$(linkdirname)
+
+coronaFrame: dir=../outbreak/park
+coronaFrame:
 	$(linkdirname)
 
 ######################################################################
