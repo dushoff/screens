@@ -65,9 +65,17 @@ trace:
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ## linkdirs
+## For now, make these under screens (where this directory also is)
+## Eventually think about or rules and farming out this directory
 
 sample: dir=~
 sample: ; $(linkdir)
+
+rabies_R0: dir=../rabies/R0
+
+rabies_correlations: dir=../rabies/correlations
+rabies_correlations rabies_R0:
+	$(linkdirname)
 
 ######################################################################
 
