@@ -8,7 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += diversity_metrics insurance rubella polarization plague checkPlots
+projdirs += diversity_metrics insurance rubella polarization plague checkPlots so_lysogeny
 rprojdirs += Mummies
 ## linkdirs += link
 
@@ -34,6 +34,9 @@ rubella: dir=rhdir/git_ICI3D_rubellaSA
 plague: dir=rhdir/git_davidearn_plague
 
 checkPlots: dir=rhdir/checkPlots
+
+so_lysogeny:
+	git clone https://github.com/Apeirogons/3BM6-Modelling.git $@
 
 ## Working on accessing a subdirectory directly
 Mummies: dir=rhdir/git_ElishaBayode_Babies_mummies_growth_rates_MS
