@@ -73,6 +73,8 @@ Ignore += mli
 ## subscreens += mli
 containers += rabies
 
+## containers += stats
+
 dirdirs += park
 ## subscreens += park
 
