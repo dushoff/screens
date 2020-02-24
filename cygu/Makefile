@@ -25,7 +25,8 @@ vim_session:
 
 ## repohome
 
-wash: dir=rhdir/git_cygubicko_wash/
+wash: 
+	git clone https://github.com/CYGUBICKO/wash.git $@
 
 funs: dir=rhdir/git_cygubicko_funs/
 
