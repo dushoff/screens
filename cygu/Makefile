@@ -8,8 +8,7 @@ current: target
 
 ## Screens
 
-projdirs += wash funs admins proview
-## linkdirs += link
+projdirs += wash funs admins proview hh
 
 screen_session: 
 	$(plvscreens)
@@ -33,6 +32,9 @@ funs: dir=rhdir/git_cygubicko_funs/
 admins: dir=rhdir/git_CYGUBICKO_admins/
 
 proview: dir=rhdir/git_CYGUBICKO_proview/
+
+hh: 
+	git clone https://github.com/CYGUBICKO/hh.git $@
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
