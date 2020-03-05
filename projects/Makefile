@@ -9,7 +9,7 @@ current: target
 ## Screens
 
 projdirs += diversity_metrics insurance rubella polarization plague checkPlots so_lysogeny
-rprojdirs += Mummies
+rprojdirs += Mummies weitzAsymp
 ## linkdirs += link
 
 screen_session: 
@@ -40,6 +40,9 @@ so_lysogeny:
 
 ## Working on accessing a subdirectory directly
 Mummies: dir=rhdir/git_ElishaBayode_Babies_mummies_growth_rates_MS
+
+weitzAsymp:
+	git clone https://github.com/mac-theobio/coronavirus_asymptomatic.git $@
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
