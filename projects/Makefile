@@ -14,7 +14,7 @@ rprojdirs += Mummies polarization
 
 screen_session: 
 	$(plvscreens)
-	$(MAKE) Mummies/
+	$(MAKE) Mummies/ms.vscreen
 
 ## Vim
 
