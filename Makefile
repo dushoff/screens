@@ -39,27 +39,13 @@ subscreens += planning
 Ignore += Dropbox
 subscreens += Dropbox
 
-## 4 Teaching
+## Teaching
 dirdirs += 1M DataViz
 containers += 3SS
 subscreens += 3SS
 
-## 5 admin
 dirdirs += admin
 subscreens += admin
-
-## 6 outbreak
-containers += outbreak
-outbreak: dir= rhdir/git_Outbreak-analysis_top
-subscreens += outbreak
-
-## 7 projects
-dirdirs += projects
-subscreens += projects
-
-## 8 projects
-dirdirs += cygu
-subscreens += cygu
 
 ## Active, but not always opened
 
@@ -67,6 +53,15 @@ dirdirs += ici3d
 
 dirdirs += staging
 ## subscreens += staging
+
+## dirdirs += dd_outbreak
+## subscreens += dd_outbreak
+
+containers += outbreak
+outbreak: dir= rhdir/git_Outbreak-analysis_top
+
+dirdirs += projects
+## subscreens += projects
 
 Ignore += shi
 ## Rebuild this, I think
@@ -82,6 +77,9 @@ containers += rabies
 
 dirdirs += park
 ## subscreens += park
+
+dirdirs += cygu
+## subscreens += cygu
 
 dirdirs += Workshops
 
@@ -109,6 +107,9 @@ rdirdirs += 1M DataViz
 ######################################################################
 
 ## Start the subscreens and the desk
+screen.list: Makefile
+	echo $(subscreens) > $@
+
 screen_session: 
 	$(MAKE) $(subscreens:%=%.subscreen)
 	screen -list run || sleep 1
