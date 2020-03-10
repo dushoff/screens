@@ -27,39 +27,37 @@ Ignore += testing
 ## This is picky because there's only one topdir, and 
 ## it's good workflow to know what's where
 
-## 1
 Ignore += run
 subscreens += run
 
-## 2
 dirdirs += planning
 subscreens += planning
 
-## 3
 Ignore += Dropbox
 subscreens += Dropbox
 
-## 4 Teaching
 dirdirs += 1M DataViz
 containers += 3SS
 subscreens += 3SS
 
-## 5 admin
 dirdirs += admin
 subscreens += admin
 
-## 6 outbreak
+containers += rabies
+subscreens += rabies
+
+dirdirs += park
+subscreens += park
+
+dirdirs += cygu
+subscreens += cygu
+
 containers += outbreak
 outbreak: dir= rhdir/git_Outbreak-analysis_top
 subscreens += outbreak
 
-## 7 projects
 dirdirs += projects
 subscreens += projects
-
-## 8 projects
-dirdirs += cygu
-subscreens += cygu
 
 ## Active, but not always opened
 
@@ -73,15 +71,7 @@ Ignore += shi
 ## dirdirs += shi
 ## subscreens += shi
 
-## dirdirs += mli
-Ignore += mli
-## subscreens += mli
-containers += rabies
-
 ## containers += stats
-
-dirdirs += park
-## subscreens += park
 
 dirdirs += Workshops
 
@@ -110,9 +100,15 @@ rdirdirs += 1M DataViz
 
 ## Start the subscreens and the desk
 screen_session: 
+	$(MAKE) screen.list
 	$(MAKE) $(subscreens:%=%.subscreen)
 	screen -list run || sleep 1
 	screen -S run -p 0 -X stuff "deskstart"
+
+Ignore += screen.list
+screen.list: Makefile
+	echo $(subscreens) | perl -pe 'BEGIN { $$/ = " "; $$\ = "\n" } $$_ = "$$. $$_"' > $@
+	- $(CP) $@ planning/Planning
 
 ######################################################################
 
