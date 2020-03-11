@@ -10,12 +10,12 @@ current: target
 
 ## park.screens: contact_trace.vscreen bayes_antigen.vscreen generation_links.vscreen speedstrength/doc.vscreen little_r.vscreen oldTalks.vscreen
 
-projdirs += trace speed flumap
+projdirs += trace speed flumap censor
 ## linkdirs += link
 
 screen_session:
-	$(MAKE) trace.vscreen
-	$(MAKE) speed.vscreen speed/doc.vscreen
+	cd trace/doc && screen -t trace_doc bash -cl "vvs"
+	cd speed/doc && screen -t speed_doc bash -cl "vvs"
 
 ##	$(plvscreens)
 ## Vim
@@ -34,6 +34,9 @@ trace: dir=rhdir/git_parksw3_contact_trace/
 speed: dir=rhdir/git_parksw3_speedstrength
 
 flumap: dir=rhdir/git_parksw3_bayesantigen2
+
+censor:
+	git clone https://github.com/parksw3/censor.git
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
