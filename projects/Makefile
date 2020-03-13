@@ -9,7 +9,7 @@ current: target
 ## Screens
 
 projdirs += diversity_metrics insurance rubella plague checkPlots weitzAsymp so_lysogeny
-rprojdirs += Mummies polarization
+rprojdirs += Mummies polarization bbmisc
 ## linkdirs += link
 
 screen_session: 
@@ -43,6 +43,9 @@ Mummies: dir=rhdir/git_ElishaBayode_Babies_mummies_growth_rates_MS
 
 weitzAsymp:
 	git clone https://github.com/mac-theobio/coronavirus_asymptomatic.git $@
+
+bbmisc:
+	git clone https://github.com/bbolker/bbmisc.git $@
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
