@@ -36,7 +36,7 @@ subscreens += planning
 Ignore += Dropbox
 subscreens += Dropbox
 
-dirdirs += 1M DataViz
+## dirdirs += 1M DataViz
 containers += 3SS
 subscreens += 3SS
 
@@ -59,6 +59,9 @@ subscreens += outbreak
 dirdirs += projects
 subscreens += projects
 
+dirdirs += Workshops
+subscreens += projects
+
 ## Active, but not always opened
 
 dirdirs += ici3d
@@ -72,8 +75,6 @@ Ignore += shi
 ## subscreens += shi
 
 ## containers += stats
-
-dirdirs += Workshops
 
 dirdirs += earn
 
@@ -91,7 +92,7 @@ rabies: dir=rhdir/git_eliminaterabies_top
 #######################
 
 Ignore += legacy
-rlinkdirs += legacy
+linkdirs += legacy
 
 rdirdirs += Sandbox
 rdirdirs += 1M DataViz 
