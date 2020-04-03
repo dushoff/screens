@@ -43,6 +43,9 @@ subscreens += 3SS
 dirdirs += admin
 subscreens += admin
 
+dirdirs += covid
+subscreens += covid
+
 containers += rabies
 subscreens += rabies
 
