@@ -43,8 +43,12 @@ subscreens += 3SS
 dirdirs += admin
 subscreens += admin
 
-dirdirs += covid
-subscreens += covid
+## FIXME need a container.Makefile and a pipeline for it
+## Based on direct.Makefile (or maybe the same?)
+containers += coronavirus
+subscreens += coronavirus
+coronavirus:
+	git clone https://github.com/dushoff/coronavirus.git
 
 containers += rabies
 subscreens += rabies
