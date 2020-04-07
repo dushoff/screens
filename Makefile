@@ -67,7 +67,7 @@ dirdirs += projects
 subscreens += projects
 
 dirdirs += Workshops
-subscreens += projects
+subscreens += Workshops
 
 ## Active, but not always opened
 
