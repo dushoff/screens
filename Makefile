@@ -19,6 +19,11 @@ setup: sync planning/Planning.sync planning/linux_config.sync
 
 ######################################################################
 
+subscreens += run planning Dropbox 3SS admin coronavirus park cygu
+nubscreens += staging shi outbreak projects rabies Workshops
+
+######################################################################
+
 ## Use testing as a Sandbox-style environment. Watch out for Dropbox finding
 
 Ignore += testing
@@ -28,58 +33,44 @@ Ignore += testing
 ## it's good workflow to know what's where
 
 Ignore += run
-subscreens += run
 
 dirdirs += planning
-subscreens += planning
 
 Ignore += Dropbox
-subscreens += Dropbox
 
 ## dirdirs += 1M DataViz
 containers += 3SS
-subscreens += 3SS
 
 dirdirs += admin
-subscreens += admin
 
 ## FIXME need a container.Makefile and a pipeline for it
 ## Based on direct.Makefile (or maybe the same?)
 containers += coronavirus
-subscreens += coronavirus
 coronavirus:
 	git clone https://github.com/dushoff/coronavirus.git
 
 containers += rabies
-subscreens += rabies
 
 dirdirs += park
-subscreens += park
 
 dirdirs += cygu
-subscreens += cygu
 
 containers += outbreak
 outbreak: dir= rhdir/git_Outbreak-analysis_top
-subscreens += outbreak
 
 dirdirs += projects
-subscreens += projects
 
 dirdirs += Workshops
-subscreens += Workshops
 
 ## Active, but not always opened
 
 dirdirs += ici3d
 
 dirdirs += staging
-## subscreens += staging
 
 Ignore += shi
 ## Rebuild this, I think
 ## dirdirs += shi
-## subscreens += shi
 
 ## containers += stats
 
