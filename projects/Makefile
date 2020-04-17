@@ -8,9 +8,9 @@ current: target
 
 ## Screens
 
-projdirs += diversity_metrics insurance rubella plague checkPlots weitzAsymp so_lysogeny
+projdirs += insurance rubella plague checkPlots weitzAsymp so_lysogeny
 rprojdirs += Mummies polarization bbmisc
-## linkdirs += link
+## linkdirs += diversity_metrics link
 
 screen_session: 
 	$(plvscreens)
