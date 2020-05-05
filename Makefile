@@ -19,7 +19,7 @@ setup: sync planning/Planning.sync planning/linux_config.sync
 
 ######################################################################
 
-subscreens += run planning Dropbox 3SS admin coronavirus park cygu
+subscreens += run planning Dropbox 3SS admin research coronavirus park cygu
 nubscreens += staging shi outbreak projects rabies Workshops
 
 ######################################################################
@@ -47,6 +47,11 @@ dirdirs += admin
 ## Based on direct.Makefile (or maybe the same?)
 containers += coronavirus
 coronavirus:
+	git clone https://github.com/dushoff/coronavirus.git
+
+containers += research
+research:
+	git clone https://github.com/dushoff/research.git
 	git clone https://github.com/dushoff/coronavirus.git
 
 containers += rabies
