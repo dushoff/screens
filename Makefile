@@ -49,10 +49,8 @@ containers += coronavirus
 coronavirus:
 	git clone https://github.com/dushoff/coronavirus.git
 
-containers += research
 research:
 	git clone https://github.com/dushoff/research.git
-	git clone https://github.com/dushoff/coronavirus.git
 
 containers += rabies
 
