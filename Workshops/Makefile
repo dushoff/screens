@@ -76,7 +76,7 @@ rabies_correlations: dir=../rabies/correlations
 rabies_correlations rabies_R0:
 	$(linkdirname)
 
-coronaSpread: dir=../outbreak/corona
+coronaSpread: dir=../coronavirus/corona
 coronaSpread:
 	$(linkdirname)
 
