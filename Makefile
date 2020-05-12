@@ -19,6 +19,13 @@ setup: sync planning/Planning.sync planning/linux_config.sync
 
 ######################################################################
 
+Ignore += library.dump library.list
+library.dump:
+	find . -name "*.R" | xargs grep library > $@
+
+library.list: library.dump ll.pl
+	$(PUSH)
+
 subscreens += run planning Dropbox 3SS admin coronavirus park cygu
 nubscreens += staging shi outbreak projects rabies Workshops
 
