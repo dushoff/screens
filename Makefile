@@ -23,6 +23,7 @@ Ignore += library.dump library.list
 library.dump:
 	find . -name "*.R" | xargs grep library > $@
 
+Sources += ll.pl
 library.list: library.dump ll.pl
 	$(PUSH)
 
