@@ -6,7 +6,7 @@ current: target
 
 ## Screens
 
-projdirs += Planning linux_config theobio_site notebook
+projdirs += Planning linux_config theobio_site notebook covid19
 ## notebook move back here!
 
 screen_session: 
@@ -19,14 +19,16 @@ vim_session:
 
 ######################################################################
 
-## Directories
-
-## repohome
+### repohome is deprecated now; not sure what will happen when i try to make a brand-new version of this directory.
 
 theobio_site: dir=rhdir/git_mac-theobio_mac-theobio.github.io
 
-sample: dir=~
-sample: ; $(linkdir)
+######################################################################
+
+### new directories
+
+covid19:
+	git clone https://github.com/mac-theobio/covid19-projects.git $@
 
 ######################################################################
 
