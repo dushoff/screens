@@ -66,7 +66,6 @@ makestuff/Makefile:
 
 ### Makestuff rules
 
-## compare makestuff/dirdir.mk
 -include makestuff/topdir.mk
 -include makestuff/listdir.mk
 
