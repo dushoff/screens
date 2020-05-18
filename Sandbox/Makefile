@@ -33,6 +33,7 @@ vim_session:
 ## repohome
 
 example: dir=rhdir/host_group_name
+example:
 	$(rcopy)
 
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
