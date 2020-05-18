@@ -53,6 +53,9 @@ CV: dir=rhdir/bit_dushoff_New_CV/
 
 Correspondence: dir=rhdir/bit_dushoff_Correspondence
 
+AnnualFlu:
+	git clone https://github.com/mac-theobio/AnnualFlu.git
+
 ######################################################################
 
 ### Makestuff
