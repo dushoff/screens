@@ -4,6 +4,11 @@ current: target
 
 ######################################################################
 
+vim_session: 
+	bash -cl "vmt screens.list makestuff/listdir.mk"
+
+######################################################################
+
 start: setup buildscreen
 
 setup: pull makestuff.pull
@@ -24,14 +29,10 @@ buildscreen: mainscreen subscreens
 ## We don't want to call this rule if the screen exists, since it will screen_session again
 mainscreen:
 	! screen -x main && exec screen -c ~/.escreenrc -dm main
-
-## Populate a screen and attach to it
-## Call screen_session indirectly to control the environment 
-subscreens:
-	screen -S main -p 0 -X exec make screen_session
+	screen -S main -p 0 -X exec make top_session
 	screen -x main
 
-## Attach to a subscreen (making sure it exists)
+## top_session calls %.subscreen, which makes and then attaches
 %.subscreen: %.makescreen
 	screen -t $(notdir $*) screen -x $(notdir $*)
 
@@ -66,7 +67,7 @@ makestuff/Makefile:
 ### Makestuff rules
 
 ## compare makestuff/dirdir.mk
-## -include makestuff/topdir.mk
+-include makestuff/topdir.mk
 -include makestuff/listdir.mk
 
 -include makestuff/git.mk
