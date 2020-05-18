@@ -31,7 +31,7 @@ library.list: library.dump ll.pl
 
 ######################################################################
 
-subscreens += run planning Dropbox 3SS admin coronavirus park cygu
+subscreens += run planning Dropbox 3SS admin coronavirus research park cygu
 nubscreens += staging shi outbreak projects rabies Workshops
 
 ######################################################################
@@ -61,6 +61,7 @@ containers += coronavirus
 coronavirus:
 	git clone https://github.com/dushoff/coronavirus.git
 
+containers += research
 research:
 	git clone https://github.com/dushoff/research.git
 
