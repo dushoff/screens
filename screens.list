@@ -3,30 +3,40 @@
 
 2. org: https://github.com/dushoff/org.git
 
-3. research: https://github.com/dushoff/research.git
+3. Dropbox
 
-4. web: https://github.com/dushoff/web.git
+4. research: https://github.com/dushoff/research.git
+
+5. web: https://github.com/dushoff/web.git
 
 ----------------------------------------------------------------------
 
-105. 3SS
-106. coronavirus
-107. makestuff
-108. outbreak
-109. rabies
+## container dirs
 
-110. Sandbox
-111. 1M
-112. admin
-113. cygu
-114. DataViz
-115. earn
-116. git_push
-117. ici3d
-118. park
-119. planning
-120. projects
-121. run
-122. shi
-123. staging
-124. Workshops
+106. 3SS
+107. coronavirus
+108. makestuff
+109. outbreak
+110. rabies
+
+## dirdirs
+
+111. Sandbox
+112. 1M
+113. admin
+114. cygu
+115. DataViz
+116. earn
+117. git_push
+118. ici3d
+119. park
+120. planning
+121. projects
+122. run
+123. shi
+124. staging
+125. Workshops
+
+## Other 
+
+126. legacy
