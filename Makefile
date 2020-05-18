@@ -66,8 +66,9 @@ makestuff/Makefile:
 
 ### Makestuff rules
 
--include makestuff/topdir.mk
+## Include screens.mk (via listdir.mk) first!
 -include makestuff/listdir.mk
+-include makestuff/topdir.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
