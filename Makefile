@@ -9,7 +9,7 @@ vim_session:
 
 ######################################################################
 
-start: setup buildscreen
+start: setup mainscreen
 
 setup: pull makestuff.pull
 ## setup: planning/Planning.pull planning/linux_config.pull
@@ -17,19 +17,13 @@ setup: pull makestuff.pull
 
 ######################################################################
 
-## Build the main screen
-
-## We may want to fail if mainscreen exists so we don't get duplication
-## Also, what about attaching from inside?
-buildscreen: mainscreen subscreens
-
 ## Create a screen
 ## Fail to attach, and then create
 ## Not failing to attach gives an error:
 ## We don't want to call this rule if the screen exists, since it will screen_session again
 mainscreen:
 	! screen -x main && exec screen -c ~/.escreenrc -dm main
-	screen -S main -p 0 -X exec make top_session
+	screen -S main -p 0 -X exec make screen_session
 	screen -x main
 
 ## top_session calls %.subscreen, which makes and then attaches
