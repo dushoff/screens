@@ -37,9 +37,9 @@ subscreens:
 %.subscreen: %.makescreen
 	screen -t $(notdir $*) screen -x $(notdir $*)
 
-## The logic here of what happens when we make from where is confusing
-## Make the directory (or subdirectory, deprecated?) exist, then:
+## Make the directory exist, then:
 ## Find a screen with this name or make a new one
+## Subdirectory use may be deprecated
 %.makescreen:
 	cd $(dir $*) && $(MAKE) $(notdir $*)
 	screen -S $(notdir $*) -p 0 -X select 0 || $(MAKE) $*.newscreen
