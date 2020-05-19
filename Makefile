@@ -5,7 +5,7 @@ current: target
 ######################################################################
 
 vim_session: 
-	bash -cl "vmt screens.list makestuff/listdir.mk"
+	bash -cl "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk"
 
 ######################################################################
 
@@ -14,6 +14,13 @@ start: setup mainscreen
 setup: pull makestuff.pull
 ## setup: planning/Planning.pull planning/linux_config.pull
 ## cd planning/linux_config && $(MAKE) main.load && $(MAKE) relink
+
+######################################################################
+
+## 2020 May 18 (Mon)
+## Stuff I'm still organizing
+
+Sources += lsd.scr
 
 ######################################################################
 
