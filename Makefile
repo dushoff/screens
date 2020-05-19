@@ -20,7 +20,8 @@ setup: pull makestuff.pull
 ## 2020 May 18 (Mon)
 ## Stuff I'm still organizing
 
-Sources += lsd.scr
+## All a bit of a mess; now HOT in research 2020 May 19 (Tue)
+Sources += lsd.scr screens.arc
 
 ######################################################################
 
