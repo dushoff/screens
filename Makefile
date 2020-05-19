@@ -24,6 +24,9 @@ Sources += lsd.scr
 
 ######################################################################
 
+## -pi example worked like a charm, I think
+## perl -pi -e "s/screen_session:.*/screen_session: screens_update/" */Makefile ##
+
 ## Create a screen
 ## Fail to attach, and then create
 ## Not failing to attach gives an error:
