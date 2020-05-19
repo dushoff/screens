@@ -14,7 +14,7 @@ projdirs += trace speed serial
 rprojdirs += censor flumap
 ## linkdirs += link
 
-screen_session:
+screen_session: screens_update
 	cd trace/doc && screen -t trace_doc bash -cl "vvs"
 	cd speed/doc && screen -t speed_doc bash -cl "vvs"
 

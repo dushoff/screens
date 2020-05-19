@@ -12,7 +12,7 @@ projdirs += insurance rubella plague checkPlots weitzAsymp so_lysogeny
 rprojdirs += Mummies polarization bbmisc
 ## linkdirs += diversity_metrics link
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 	$(MAKE) Mummies/ms.vscreen
 

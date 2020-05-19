@@ -11,7 +11,7 @@ current: target
 projdirs += onmort LBoM
 ## linkdirs += link
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim

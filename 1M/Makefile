@@ -15,7 +15,7 @@ projdirs += Lectures web Tests Archive
 ## https://dushoff@bitbucket.org/dushoff/1m_private.git
 ## https://github.com/Bio1M/Archive
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim

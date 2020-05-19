@@ -9,7 +9,7 @@ current: target
 projdirs += Planning linux_config theobio_site notebook covid19
 ## notebook move back here!
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim

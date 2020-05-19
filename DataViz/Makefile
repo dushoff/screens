@@ -12,7 +12,7 @@ projdirs += public private
 linkdirs += QMEE 17 p17
 ## linkdirs += link
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim

@@ -11,7 +11,7 @@ current: target
 ## projdirs += project
 ## linkdirs += link
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 screens_setup: url= https://github.com/dushoff/screens.git

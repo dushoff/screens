@@ -18,7 +18,7 @@ webdirs += daiddweb
 linkdirs += $(webdirs)
 alldirs += $(webdirs)
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim

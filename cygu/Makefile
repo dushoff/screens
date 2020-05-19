@@ -10,7 +10,7 @@ current: target
 
 projdirs += wash funs admins proview hh
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim
