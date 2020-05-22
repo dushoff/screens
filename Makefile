@@ -12,20 +12,15 @@ vim_session:
 start: setup mainscreen
 
 setup: pull makestuff.pull
-## setup: planning/Planning.pull planning/linux_config.pull
-## cd planning/linux_config && $(MAKE) main.load && $(MAKE) relink
+## setup: org/Planning.pull org/linux_config.pull
+## cd org/linux_config && $(MAKE) main.load && $(MAKE) relink
 
 ######################################################################
 
-## 2020 May 18 (Mon)
-## Stuff I'm still organizing
+## 2020 May 22 (Fri) Does ANYTHING?? need to be here?
+## relink and Planning etc, should be here, other stuff can be in topdir
 
-## All a bit of a mess; now HOT in research 2020 May 19 (Tue)
-Sources += lsd.scr screens.arc
-
-######################################################################
-
-## -pi example worked like a charm, I think
+## -pi example worked like a charm
 ## perl -pi -e "s/screen_session:.*/screen_session: screens_update/" */Makefile ##
 
 ## Create a screen
@@ -40,6 +35,9 @@ mainscreen:
 ## top_session calls %.subscreen, which makes and then attaches
 %.subscreen: %.makescreen
 	screen -t $(notdir $*) screen -x $(notdir $*)
+
+%.screen: %.makescreen
+	screen -x $(notdir $*)
 
 ## Make the directory exist, then:
 ## Find a screen with this name or make a new one
@@ -74,6 +72,9 @@ makestuff/Makefile:
 ## Include screens.mk (via listdir.mk) first!
 -include makestuff/listdir.mk
 -include makestuff/topdir.mk
+
+## Necessary or not (included from topdir but seems to work here?)
+-include makestuff/dirnames.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
