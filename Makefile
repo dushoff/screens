@@ -11,9 +11,9 @@ vim_session:
 
 start: setup mainscreen
 
-setup: pull makestuff.pull
-## setup: org/Planning.pull org/linux_config.pull
-## cd org/linux_config && $(MAKE) main.load && $(MAKE) relink
+setup: pull makestuff.pull screenpull
+
+screenpull: $(screendirs: %=%.pull)
 
 ######################################################################
 
