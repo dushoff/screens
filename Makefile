@@ -17,6 +17,9 @@ setup: pull makestuff.pull
 
 ######################################################################
 
+## Dev
+screens.mk: screens.list makestuff/lmk.pl
+
 ## 2020 May 22 (Fri) Does ANYTHING?? need to be here?
 ## relink and Planning etc, should be here, other stuff can be in topdir
 

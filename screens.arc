@@ -1,11 +1,9 @@
 
-3 files to edit
-
 XX. tech: https://github.com/dushoff/tech.git
 
 XX. org: https://github.com/dushoff/org.git
 
-XX. Dropbox
+XX. Dropbox ## NOALL
 
 XX. research: https://github.com/dushoff/research.git
 
