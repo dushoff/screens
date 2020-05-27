@@ -14,7 +14,8 @@ start: setup mainscreen
 setup: pull makestuff.pull screenpull
 
 screenpull = $(screendirs:%=%.pull)
-screenpull: $(screenpull)
+screenpull: 
+	$(MAKE) $(screenpull)
 
 ######################################################################
 
