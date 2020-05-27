@@ -13,7 +13,8 @@ start: setup mainscreen
 
 setup: pull makestuff.pull screenpull
 
-screenpull: $(screendirs: %=%.pull)
+screenpull = $(screendirs:%=%.pull)
+screenpull: $(screenpull)
 
 ######################################################################
 
@@ -72,7 +73,6 @@ makestuff/Makefile:
 
 ### Makestuff rules
 
-## Include screens.mk (via listdir.mk) first!
 -include makestuff/listdir.mk
 -include makestuff/topdir.mk
 
