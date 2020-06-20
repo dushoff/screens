@@ -4,6 +4,9 @@ current: target
 
 ######################################################################
 
+new_session:
+	bash -cl "exec vim Makefile" 
+
 vim_session: 
 	bash -cl "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk"
 
@@ -33,8 +36,11 @@ screens.mk: screens.list makestuff/lmk.pl
 ## Fail to attach, and then create
 ## Not failing to attach gives an error:
 ## We don't want to call this rule if the screen exists, since it will screen_session again
-mainscreen:
+escreen:
 	! screen -x main && exec screen -c ~/.escreenrc -dm main
+
+mainscreen:
+	$(MAKE) escreen
 	screen -S main -p 0 -X exec make screen_session
 	screen -x main
 
