@@ -4,6 +4,8 @@ current: target
 
 ######################################################################
 
+Sources += history.md listnotes.md
+
 new_session:
 	bash -cl "exec vim Makefile" 
 

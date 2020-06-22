@@ -9,11 +9,13 @@ XX. research: https://github.com/dushoff/research.git
 
 XX. web: https://github.com/dushoff/web.git
 
+XX. 3SS: https://github.com/dushoff/listdir.git
+
 ----------------------------------------------------------------------
 
 ## container dirs
 
-XX. 3SS
+XX. 3SS_top
 XX. coronavirus
 XX. makestuff
 XX. outbreak
