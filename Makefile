@@ -69,6 +69,8 @@ mainscreen:
 
 ######################################################################
 
+Ignore += dump.txt
+
 Sources += Makefile 
 
 -include makestuff/os.mk
