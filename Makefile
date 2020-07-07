@@ -16,9 +16,11 @@ vim_session:
 
 start: setup mainscreen
 
-setup: pull makestuff.pull screenpull
+setup: pull makestuff.pull screenpull org/Planning.pull
 
-## Why was this so awkward?
+linux_setup: tech/linux_config.pull
+	cd tech/linux_config && $(MAKE) relink
+
 screenpull = $(screendirs:%=%.pull)
 screenpull: 
 	$(MAKE) $(screenpull)
