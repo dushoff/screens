@@ -5,3 +5,8 @@ screens mark I used rhdir to try to be fancy about importing. It was the first a
 This is screens mark II. Anything that was imported into screens mark I is _still here_ (unless it has been moved around by the mark II machinery, in which case you don't need old versions of it)
 
 mark II is driven by the fairly baroque, but so-far robust-ish listdir machinery
+
+2020 Jul 07 (Tue)
+=================
+
+Addings Talks listdir; note this directory is also a listdir! (screens.list)

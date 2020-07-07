@@ -69,8 +69,6 @@ mainscreen:
 
 ######################################################################
 
-Ignore += dump.txt
-
 Sources += Makefile 
 
 -include makestuff/os.mk
@@ -83,13 +81,8 @@ makestuff/Makefile:
 	git clone $(msrepo)/makestuff
 	ls $@
 
-### Makestuff rules
-
 -include makestuff/listdir.mk
 -include makestuff/topdir.mk
-
-## Necessary or not (included from topdir but seems to work here?)
--include makestuff/dirnames.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
