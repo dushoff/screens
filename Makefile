@@ -16,7 +16,7 @@ vim_session:
 
 start: setup mainscreen
 
-setup: pull makestuff.pull screenpull org/Planning.pull
+setup: pull screens.update makestuff.pull screenpull org/Planning.pull linux_setup
 
 linux_setup: tech/linux_config.pull
 	cd tech/linux_config && $(MAKE) relink
