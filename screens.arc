@@ -11,13 +11,14 @@ XX. web: https://github.com/dushoff/web.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
-TalkArchive: https://github.com/dushoff/TalkArchive.git 
+XX. 3SS:
 
 ----------------------------------------------------------------------
 
 ## container dirs
 
-XX. 3SS
+3SS_top:
+
 XX. coronavirus
 XX. makestuff
 XX. outbreak
