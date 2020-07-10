@@ -9,6 +9,10 @@ XX. research: https://github.com/dushoff/research.git
 
 XX. web: https://github.com/dushoff/web.git
 
+XX. Talks: https://github.com/dushoff/Talks.git 
+
+TalkArchive: https://github.com/dushoff/TalkArchive.git 
+
 ----------------------------------------------------------------------
 
 ## container dirs
