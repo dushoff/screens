@@ -11,13 +11,14 @@ XX. web: https://github.com/dushoff/web.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
-XX. 3SS:
+## Move this to 3SS.git
+XX. 3SS:  https://github.com/dushoff/listdir.git
 
 ----------------------------------------------------------------------
 
-## container dirs
+3SS_top: https://github.com/Bio3SS/top.git
 
-3SS_top:
+## container dirs
 
 XX. coronavirus
 XX. makestuff
