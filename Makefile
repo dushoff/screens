@@ -67,6 +67,7 @@ mainscreen:
 %.newscreen:
 	cd $* && screen -dm $(notdir $*)
 	screen -list $(notdir $*) || sleep 1
+	- cd $(notdir $*) && $(MAKE) vimclean
 	screen -S $(notdir $*) -p 0 -X exec make screen_session
 
 ######################################################################
