@@ -1,5 +1,5 @@
 
-XX. tech: https://github.com/dushoff/tech.git
+. tech: https://github.com/dushoff/tech.git
 
 XX. org: https://github.com/dushoff/org.git
 
