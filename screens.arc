@@ -11,10 +11,10 @@ XX. web: https://github.com/dushoff/web.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
-XX. ICI3D: https://github.com/dushoff/ICI3D.git
+ICI3D: https://github.com/dushoff/ICI3D.git
 
 ## Rename this repo to 3SS.git
-3SS:  https://github.com/dushoff/3SS.git
+XX. 3SS:  https://github.com/dushoff/3SS.git
 
 ## Temporary 2021 Jan 04 (Mon)
 mv 3SS 3SS_list ##
