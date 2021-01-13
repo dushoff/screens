@@ -13,14 +13,13 @@ XX. Talks: https://github.com/dushoff/Talks.git
 
 ICI3D: https://github.com/dushoff/ICI3D.git
 
-## Rename this repo to 3SS.git
 XX. 3SS:  https://github.com/dushoff/3SS.git
 
-## Temporary 2021 Jan 04 (Mon)
-mv 3SS 3SS_list ##
+XX. 708: https://github.com/dushoff/708.git
 
 ----------------------------------------------------------------------
 
+## Old and busted
 3SS_top: https://github.com/Bio3SS/top.git
 
 ## container dirs
@@ -31,6 +30,7 @@ XX. outbreak
 XX. rabies
 
 ## dirdirs
+## These should all go!
 
 XX. Sandbox
 XX. 1M

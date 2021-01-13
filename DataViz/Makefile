@@ -1,4 +1,6 @@
-## This the DataViz dirdir
+## This the DataViz dirdir 
+## DEPRECATED long before 2021 Jan 12 (Tue)
+## Get rid of it by summer
 ## makestuff/direct.Makefile
 
 current: target
