@@ -12,6 +12,8 @@ new_session:
 vim_session: 
 	bash -cl "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk"
 
+Ignore += dump.txt
+
 ######################################################################
 
 start: setup mainscreen
