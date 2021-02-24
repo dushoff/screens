@@ -19,6 +19,8 @@ XX. 708: https://github.com/dushoff/708.git
 
 ----------------------------------------------------------------------
 
+MacpHac: https://github.com/mac-theobio/MacpHac.git
+
 ## Old and busted
 3SS_top: https://github.com/Bio3SS/top.git
 
