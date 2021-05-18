@@ -11,11 +11,11 @@ XX. web: https://github.com/dushoff/web.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
-ICI3D: https://github.com/dushoff/ICI3D.git
+XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
-XX. 3SS:  https://github.com/dushoff/3SS.git
+3SS:  https://github.com/dushoff/3SS.git
 
-XX. 708: https://github.com/dushoff/708.git
+708: https://github.com/dushoff/708.git
 
 ----------------------------------------------------------------------
 
