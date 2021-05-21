@@ -13,11 +13,11 @@ XX. Talks: https://github.com/dushoff/Talks.git
 
 XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
+----------------------------------------------------------------------
+
 3SS:  https://github.com/dushoff/3SS.git
 
 708: https://github.com/dushoff/708.git
-
-----------------------------------------------------------------------
 
 MacpHac: https://github.com/mac-theobio/MacpHac.git
 
