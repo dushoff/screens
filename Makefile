@@ -4,8 +4,9 @@ current: target
 
 ######################################################################
 
-Sources += history.md
+Sources += history.md setup.md
 
+## This was probably testing the accumulation of active make jobs problem; needs more work
 new_session:
 	bash -cl "exec vim Makefile" 
 
