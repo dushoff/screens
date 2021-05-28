@@ -30,6 +30,17 @@ screenpull:
 
 ######################################################################
 
+## Bootstrapping
+
+Dropbox: dir=~
+Dropbox:
+	$(linkdir)
+
+org/Planning:
+	$(makethere)
+
+######################################################################
+
 ## Dev
 screens.mk: screens.list makestuff/lmk.pl
 
