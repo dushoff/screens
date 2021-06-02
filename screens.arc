@@ -15,6 +15,8 @@ XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 ----------------------------------------------------------------------
 
+dataviz: https://github.com/dushoff/dataviz.git
+
 3SS:  https://github.com/dushoff/3SS.git
 
 708: https://github.com/dushoff/708.git
