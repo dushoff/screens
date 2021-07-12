@@ -10,7 +10,7 @@ new_session:
 	bash -cl "exec vim Makefile" 
 
 vim_session: 
-	bash -cl "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk"
+	bash -cl "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk make.log"
 
 Ignore += dump.txt inc
 
