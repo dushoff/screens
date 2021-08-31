@@ -1,4 +1,5 @@
 ## screens
+## See makestuff/listdir.md
 current: target
 
 ######################################################################
@@ -101,7 +102,6 @@ makestuff/Makefile:
 	git clone $(msrepo)/makestuff
 	ls $@
 
-## See makestuff/listdir.md
 -include makestuff/listdir.mk
 -include makestuff/topdir.mk
 

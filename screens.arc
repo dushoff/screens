@@ -9,13 +9,15 @@ XX. research: https://github.com/dushoff/research.git
 
 XX. web: https://github.com/dushoff/web.git
 
-XX. Talks: https://github.com/dushoff/Talks.git 
+XX. 1M: https://github.com/dushoff/1M.git
 
-XX. ICI3D: https://github.com/dushoff/ICI3D.git
+XX. dataviz: https://github.com/dushoff/dataviz.git
 
 ----------------------------------------------------------------------
 
-dataviz: https://github.com/dushoff/dataviz.git
+XX. Talks: https://github.com/dushoff/Talks.git 
+
+XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 3SS:  https://github.com/dushoff/3SS.git
 
@@ -37,7 +39,6 @@ XX. rabies
 ## These should all go!
 
 XX. Sandbox
-XX. 1M
 XX. admin
 XX. cygu
 XX. DataViz
