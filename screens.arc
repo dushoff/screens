@@ -14,13 +14,3 @@ XX. 1M: https://github.com/dushoff/1M.git
 XX. dataviz: https://github.com/dushoff/dataviz.git
 
 XX. rabies: https://github.com/eliminaterabies/top.git
-
-Talks: https://github.com/dushoff/Talks.git 
-
-ICI3D: https://github.com/dushoff/ICI3D.git
-
-3SS:  https://github.com/dushoff/3SS.git
-
-708: https://github.com/dushoff/708.git
-
-MacpHac: https://github.com/mac-theobio/MacpHac.git
