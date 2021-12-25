@@ -15,7 +15,7 @@ dataviz: https://github.com/dushoff/dataviz.git
 
 rabies: https://github.com/eliminaterabies/top.git
 
-XX. Talks: https://github.com/dushoff/Talks.git 
+Talks: https://github.com/dushoff/Talks.git 
 
 3SS:  https://github.com/dushoff/3SS.git
 
