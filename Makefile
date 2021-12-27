@@ -15,6 +15,9 @@ vim_session:
 
 Ignore += dump.txt inc
 
+inc:
+	ln -fs ~/screens/org/Planning/inc
+
 ######################################################################
 
 start: setup mainscreen
