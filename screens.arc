@@ -17,7 +17,7 @@ dataviz: https://github.com/dushoff/dataviz.git
 
 rabies: https://github.com/eliminaterabies/top.git
 
-Talks: https://github.com/dushoff/Talks.git 
+XX. Talks: https://github.com/dushoff/Talks.git 
 
 ICI3D: https://github.com/dushoff/ICI3D.git
 
