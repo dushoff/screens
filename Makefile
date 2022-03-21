@@ -22,9 +22,9 @@ inc:
 
 start: setup mainscreen
 
-setup: pull screens.update makestuff.pull screenpull org/Planning.pull linux_setup
+setup: pull screens.update makestuff.sync screenpull org/Planning.sync linux_setup
 
-linux_setup: tech/linux_config.pull
+linux_setup: tech/linux_config.sync
 	cd tech/linux_config && $(MAKE) relink
 
 screenpull = $(screendirs:%=%.pull)
