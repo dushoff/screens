@@ -11,7 +11,7 @@ XX. web: https://github.com/dushoff/web.git
 
 1M: https://github.com/dushoff/1M.git
 
-XX. 3SS:  https://github.com/dushoff/3SS.git
+3SS:  https://github.com/dushoff/3SS.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
