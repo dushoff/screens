@@ -9,6 +9,8 @@ XX. research: https://github.com/dushoff/research.git
 
 XX. web: https://github.com/dushoff/web.git
 
+XX. code: https://github.com/dushoff/code.git
+
 1M: https://github.com/dushoff/1M.git
 
 3SS:  https://github.com/dushoff/3SS.git
