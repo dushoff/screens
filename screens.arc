@@ -15,14 +15,14 @@ XX. bicko: https://github.com/CYGUBICKO/thesis.git
 
 1M: https://github.com/dushoff/1M.git
 
-3SS:  https://github.com/dushoff/3SS.git
+XX. 3SS:  https://github.com/dushoff/3SS.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
 rabies: https://github.com/eliminaterabies/top.git
 
-XX. Talks: https://github.com/dushoff/Talks.git 
+Talks: https://github.com/dushoff/Talks.git 
 
-ICI3D: https://github.com/dushoff/ICI3D.git
+XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 708: https://github.com/dushoff/708.git
