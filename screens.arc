@@ -19,7 +19,7 @@ XX. bicko: https://github.com/CYGUBICKO/thesis.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
-rabies: https://github.com/eliminaterabies/top.git
+XX. rabies: https://github.com/eliminaterabies/top.git
 
 Talks: https://github.com/dushoff/Talks.git 
 
