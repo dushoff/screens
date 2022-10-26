@@ -7,11 +7,11 @@ XX. Dropbox ## NOALL
 
 XX. research: https://github.com/dushoff/research.git
 
+XX. rabies: https://github.com/eliminaterabies/top.git
+
 XX. web: https://github.com/dushoff/web.git
 
 XX. code: https://github.com/dushoff/code.git
-
-XX. bicko: https://github.com/CYGUBICKO/thesis.git
 
 1M: https://github.com/dushoff/1M.git
 
@@ -19,10 +19,11 @@ XX. bicko: https://github.com/CYGUBICKO/thesis.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
-XX. rabies: https://github.com/eliminaterabies/top.git
-
-Talks: https://github.com/dushoff/Talks.git 
+XX. Talks: https://github.com/dushoff/Talks.git 
 
 XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 708: https://github.com/dushoff/708.git
+
+## Deprecated 2022 Oct 26 (Wed)
+bicko: https://github.com/CYGUBICKO/thesis.git
