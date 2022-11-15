@@ -25,7 +25,7 @@ XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 708: https://github.com/dushoff/708.git
 
-bicko: https://github.com/dushoff/bicko
+XX. bicko: https://github.com/dushoff/bicko
 
 ## Deprecated 2022 Oct 26 (Wed)
 ## Maybe spin a new Bicko?
