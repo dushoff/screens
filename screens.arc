@@ -9,6 +9,8 @@ XX. research: https://github.com/dushoff/research.git
 
 XX. rabies: https://github.com/eliminaterabies/top.git
 
+XX. tsetse: https://github.com/dushoff/tsetse.git
+
 XX. web: https://github.com/dushoff/web.git
 
 XX. code: https://github.com/dushoff/code.git
