@@ -1,11 +1,3 @@
-## screens
-## See makestuff/listdir.md
-current: target
-
-######################################################################
-
-Ignore += gtmp
-
 Sources += history.md setup.md
 
 ## This was probably testing the accumulation of active make jobs problem; needs more work
