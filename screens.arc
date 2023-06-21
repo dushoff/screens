@@ -31,6 +31,6 @@ XX. bicko: https://github.com/dushoff/bicko
 
 541: https://github.com/dushoff/541.git
 
-XX. mrlawyer: https://github.com/dushoff/mrlawyer.git
+mrlawyer: https://github.com/dushoff/mrlawyer.git
 
 gitroot:
