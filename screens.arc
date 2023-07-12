@@ -33,4 +33,6 @@ XX. bicko: https://github.com/dushoff/bicko
 
 mrlawyer: https://github.com/dushoff/mrlawyer.git
 
+listdirs: https://github.com/dushoff/mrlawyer.git
+
 gitroot:
