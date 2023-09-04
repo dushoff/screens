@@ -38,6 +38,24 @@ org/Planning:
 
 ######################################################################
 
+dm = dushoff@mcmaster.ca
+
+macDrive:
+	mkdir $@
+	seaf-cli init -d $@
+
+## del -rf macDrive/scienceTP ##
+macDrive/scienceTP: | macDrive
+	$(mkdir)
+	seaf-cli download \
+	-l 8ed15372-1766-476b-a6f8-5cf7620a489b \
+	-s http://macdrive.mcmaster.ca \
+	-d $@ \
+	-u $(dm) \
+	|| ($(RMR) $@ && false)
+	
+######################################################################
+
 ## Dev
 screens.mk: screens.list makestuff/lmk.pl
 
