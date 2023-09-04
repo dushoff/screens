@@ -103,6 +103,8 @@ mainscreen:
 
 Ignore += *.tmp
 
+Ignore += macDrive
+
 ######################################################################
 
 Sources += Makefile 
