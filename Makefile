@@ -40,19 +40,19 @@ org/Planning:
 
 dm = dushoff@mcmaster.ca
 
-macDrive:
-	mkdir $@
+~/oneDrive: Makefile
+	- $(mkdir)
 	seaf-cli init -d $@
 
-## del -rf macDrive/scienceTP ##
-macDrive/scienceTP: | macDrive
+## There's a config folder ~/.ccnet
+macDrive:
 	$(mkdir)
+
+macDrive/scienceTP: | ~/oneDrive macDrive
 	seaf-cli download \
 	-l 8ed15372-1766-476b-a6f8-5cf7620a489b \
 	-s http://macdrive.mcmaster.ca \
-	-d $@ \
-	-u $(dm) \
-	|| ($(RMR) $@ && false)
+	-u $(dm) 
 	
 ######################################################################
 
