@@ -27,7 +27,7 @@ XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 708: https://github.com/dushoff/708.git
 
-XX. bicko: https://github.com/dushoff/bicko
+bicko: https://github.com/dushoff/bicko
 
 541: https://github.com/dushoff/541.git
 
