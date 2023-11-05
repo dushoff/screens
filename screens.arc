@@ -3,7 +3,9 @@ XX. tech: https://github.com/dushoff/tech.git
 
 XX. org: https://github.com/dushoff/org.git
 
-XX. Dropbox ## NOALL
+Dropbox ## NOALL
+
+XX. drops: https://github.com/dushoff/drops.git ## NOALL
 
 XX. research: https://github.com/dushoff/research.git
 
