@@ -25,7 +25,7 @@ XX. Talks: https://github.com/dushoff/Talks.git
 
 XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
-708: https://github.com/dushoff/708.git
+XX. 708: https://github.com/dushoff/708.git
 
 XX. bicko: https://github.com/dushoff/bicko
 
