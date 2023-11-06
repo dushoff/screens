@@ -3,7 +3,9 @@ XX. tech: https://github.com/dushoff/tech.git
 
 XX. org: https://github.com/dushoff/org.git
 
-XX. Dropbox ## NOALL
+Dropbox ## NOALL
+
+XX. drops: https://github.com/dushoff/drops.git ## NOALL
 
 XX. research: https://github.com/dushoff/research.git
 
@@ -27,7 +29,7 @@ XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 XX. 708: https://github.com/dushoff/708.git
 
-XX. bicko: https://github.com/dushoff/bicko
+bicko: https://github.com/dushoff/bicko
 
 541: https://github.com/dushoff/541.git
 
