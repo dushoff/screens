@@ -5,7 +5,7 @@ XX. org: https://github.com/dushoff/org.git
 
 Dropbox ## NOALL
 
-XX. drops: https://github.com/dushoff/drops.git ## NOALL
+XX. drops: https://github.com/dushoff/drops.git
 
 XX. research: https://github.com/dushoff/research.git
 
@@ -27,7 +27,7 @@ XX. Talks: https://github.com/dushoff/Talks.git
 
 XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
-XX. 708: https://github.com/dushoff/708.git
+708: https://github.com/dushoff/708.git
 
 bicko: https://github.com/dushoff/bicko
 
