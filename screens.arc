@@ -17,6 +17,8 @@ XX. web: https://github.com/dushoff/web.git
 
 XX. code: https://github.com/dushoff/code.git
 
+XX. ICI3D: https://github.com/dushoff/ICI3D.git
+
 XX. 1M: https://github.com/dushoff/1M.git
 
 3SS:  https://github.com/dushoff/3SS.git
@@ -24,8 +26,6 @@ XX. 1M: https://github.com/dushoff/1M.git
 dataviz: https://github.com/dushoff/dataviz.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
-
-XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 708: https://github.com/dushoff/708.git
 
