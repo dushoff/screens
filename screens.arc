@@ -21,13 +21,13 @@ XX. code: https://github.com/dushoff/code.git
 
 XX. 3SS:  https://github.com/dushoff/3SS.git
 
+XX. 708: https://github.com/dushoff/708.git
+
 dataviz: https://github.com/dushoff/dataviz.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
 XX. ICI3D: https://github.com/dushoff/ICI3D.git
-
-708: https://github.com/dushoff/708.git
 
 bicko: https://github.com/dushoff/bicko
 
