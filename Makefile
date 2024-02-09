@@ -69,6 +69,7 @@ screens.mk: screens.list makestuff/lmk.pl
 ## Fail to attach, and then create
 ## Not failing to attach gives an error:
 ## We don't want to call this rule if the screen exists, since it will screen_session again
+## this backwards logic seems ok, but I don't know why it's backwards
 escreen:
 	! screen -x main && exec screen -c ~/.escreenrc -dm main
 
