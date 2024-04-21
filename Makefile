@@ -108,7 +108,7 @@ Ignore += macDrive
 
 ######################################################################
 
-Sources += Makefile 
+Sources += Makefile
 
 -include makestuff/os.mk
 
