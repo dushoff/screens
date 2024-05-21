@@ -3,8 +3,6 @@ XX. tech: https://github.com/dushoff/tech.git
 
 XX. org: https://github.com/dushoff/org.git
 
-Dropbox ## NOALL
-
 XX. drops: https://github.com/dushoff/drops.git
 
 XX. research: https://github.com/dushoff/research.git
@@ -19,9 +17,9 @@ XX. code: https://github.com/dushoff/code.git
 
 1M: https://github.com/dushoff/1M.git
 
-XX. 3SS:  https://github.com/dushoff/3SS.git
+3SS:  https://github.com/dushoff/3SS.git
 
-XX. 708: https://github.com/dushoff/708.git
+708: https://github.com/dushoff/708.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
