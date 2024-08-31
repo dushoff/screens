@@ -9,6 +9,8 @@ vim_session:
 
 Ignore += dump.txt inc
 
+-include makestuff/perl.def
+
 inc:
 	ln -fs ~/screens/org/Planning/inc
 
