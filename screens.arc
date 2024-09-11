@@ -3,7 +3,7 @@ XX. tech: https://github.com/dushoff/tech.git
 
 XX. org: https://github.com/dushoff/org.git
 
-XX. drops: https://github.com/dushoff/drops.git
+drops: https://github.com/dushoff/drops.git ## Deprecated during 2024 Dropbox catastrophe
 
 XX. research: https://github.com/dushoff/research.git
 
