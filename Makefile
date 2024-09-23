@@ -16,6 +16,9 @@ inc:
 
 ######################################################################
 
+logtest: make.log logtest.pl
+	perl -wf logtest.pl < $<
+
 start: setup mainscreen
 
 setup: pull screens.update makestuff.sync screenpull org/Planning.sync linux_setup
