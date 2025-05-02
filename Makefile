@@ -17,7 +17,7 @@ inc:
 ######################################################################
 
 logtest: make.log logtest.pl
-	perl -wf logtest.pl < $<
+	@perl -wf logtest.pl < $<
 
 start: setup mainscreen
 

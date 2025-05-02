@@ -1,6 +1,8 @@
 use strict;
 use 5.10.0;
 
+say "## Logtest";
+
 my $hot = 0;
 
 while(<>){
