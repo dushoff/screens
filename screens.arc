@@ -25,7 +25,7 @@ dataviz: https://github.com/dushoff/dataviz.git
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
-ICI3D: https://github.com/dushoff/ICI3D.git
+XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 bicko: https://github.com/dushoff/bicko
 
