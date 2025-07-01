@@ -27,7 +27,7 @@ XX. Talks: https://github.com/dushoff/Talks.git
 
 XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
-XX. mmed25Projects: https://github.com/dushoff/mmed25Projects/
+mmed25: https://github.com/dushoff/mmed25/ ## listdir for the projects
 
 bicko: https://github.com/dushoff/bicko
 
