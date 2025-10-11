@@ -23,7 +23,7 @@ XX. 1M: https://github.com/dushoff/1M.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
-XX. Talks: https://github.com/dushoff/Talks.git 
+Talks: https://github.com/dushoff/Talks.git 
 
 ICI3D: https://github.com/dushoff/ICI3D.git
 
