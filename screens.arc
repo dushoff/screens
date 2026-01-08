@@ -23,17 +23,25 @@ XX. 708: https://github.com/dushoff/708.git
 
 dataviz: https://github.com/dushoff/dataviz.git
 
+XX. qmee: https://github.com/dushoff/qmee
+
 XX. Talks: https://github.com/dushoff/Talks.git 
 
 ICI3D: https://github.com/dushoff/ICI3D.git
 
 mmed25: https://github.com/dushoff/mmed25/ ## listdir for the projects
 
+######################################################################
+
+These seem pretty defunct 
+
 bicko: https://github.com/dushoff/bicko
 
-541: https://github.com/dushoff/541.git
+541: https://github.com/dushoff/541.git ## Dushoff/Akhetzhanov (virtually no content)
 
-mrlawyer: https://github.com/dushoff/mrlawyer.git
+mrlawyer: https://github.com/dushoff/mrlawyer.git ## Dushoff/Roswell 🙁
+
+######################################################################
 
 listdirs: 
 
