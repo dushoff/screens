@@ -21,15 +21,15 @@ XX. 3SS:  https://github.com/dushoff/3SS.git
 
 XX. 708: https://github.com/dushoff/708.git
 
-dataviz: https://github.com/dushoff/dataviz.git
-
-XX. qmee: https://github.com/dushoff/qmee
+qmee: https://github.com/dushoff/qmee
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
 ICI3D: https://github.com/dushoff/ICI3D.git
 
 mmed25: https://github.com/dushoff/mmed25/ ## listdir for the projects
+
+dataviz: https://github.com/dushoff/dataviz.git
 
 ######################################################################
 
