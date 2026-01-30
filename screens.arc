@@ -21,7 +21,7 @@ XX. 3SS:  https://github.com/dushoff/3SS.git
 
 XX. 708: https://github.com/dushoff/708.git
 
-XX. qmee: https://github.com/dushoff/qmee
+XX. qmeeStuds: https://github.com/dushoff/qmee
 
 Talks: https://github.com/dushoff/Talks.git 
 
