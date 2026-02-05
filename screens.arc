@@ -23,7 +23,7 @@ XX. 708: https://github.com/dushoff/708.git
 
 XX. qmeeStuds: https://github.com/dushoff/qmee
 
-Talks: https://github.com/dushoff/Talks.git 
+XX. Talks: https://github.com/dushoff/Talks.git 
 
 ICI3D: https://github.com/dushoff/ICI3D.git
 
