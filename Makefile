@@ -2,10 +2,10 @@ Sources += history.md setup.md
 
 ## This was probably testing the accumulation of active make jobs problem; needs more work
 new_session:
-	bash -cl "exec vim Makefile" 
+	bash -ic "exec vim Makefile" 
 
 vim_session: 
-	bash -cl "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk make.log"
+	bash -ic "vmt screens.list makestuff/listdir.mk makestuff/topdir.mk make.log"
 
 Ignore += dump.txt inc
 
@@ -98,7 +98,7 @@ mainscreen:
 	screen -S $(notdir $*) -p 0 -X select 0 || $(MAKE) $*.newscreen
 
 ## Sleep line under test 2020 Jan 11 (Sat)
-## bash -cl here (before screen -dm) led to a very weird disaster
+## bash -ic here (before screen -dm) led to a very weird disaster
 %.newscreen:
 	cd $* && screen -dm $(notdir $*)
 	screen -list $(notdir $*) || sleep 1
