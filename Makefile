@@ -99,7 +99,7 @@ mainscreen:
 
 ## Sleep line under test 2020 Jan 11 (Sat)
 ## bash -ic here (before screen -dm) led to a very weird disaster
-%.newscreen:
+.newscreen:
 	cd $* && screen -dm $(notdir $*)
 	screen -list $(notdir $*) || sleep 1
 	- cd $(notdir $*) && $(MAKE) vimclean
