@@ -25,7 +25,7 @@ XX. qmeeStuds: https://github.com/dushoff/qmee
 
 XX. Talks: https://github.com/dushoff/Talks.git 
 
-ICI3D: https://github.com/dushoff/ICI3D.git
+XX. ICI3D: https://github.com/dushoff/ICI3D.git
 
 mmed25: https://github.com/dushoff/mmed25/ ## listdir for the projects
 
