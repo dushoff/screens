@@ -1,5 +1,7 @@
 Sources += history.md setup.md
 
+all.time: terminal.all
+
 ## This was probably testing the accumulation of active make jobs problem; needs more work
 new_session:
 	bash -ic "exec vim Makefile" 
